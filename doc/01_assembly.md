@@ -12,17 +12,17 @@ The reference design includes a minimal user interface in the form of 10 switche
 
 _add example list of pcb manufacturing services?_
 
-## Bill of Materials
+## Acquiring Parts
 
 _todo add links to BOM in github + link to mouser BOM_
 
 ## Soldering
 
-Once all parts of the BOM have been assembled, refer to the [schematics]() and [placement diagram](), and solder each part its appropriate location on the PCB.
+Once all parts of the BOM have been acquired, refer to the [schematics]() and [placement diagram](), and solder each part its appropriate location on the PCB.
 
 _add some links to SMD soldering tutorials?_
 
-## Assembly
+## Assembling
 
 After completing the soldering, remove the interface panel of the NTS-1 digital kit and replace it with the custom panel.
 
