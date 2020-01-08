@@ -10,7 +10,7 @@ The appearance and user interface of the [Nu:Tekt NTS-1 digital kit](https://www
 
 We provide an open hardware reference panel design that can be used as a template for the creation of original NTS-1 panel designs. 
 
-![Reference Custom Panel Design Rev.B](/assets/NTS-1_ref_cp_revb_front.jpg)
+![Reference Custom Panel Design Rev.B](assets/NTS-1_ref_cp_revb_front.jpg)
 
 Schematics, bill of materials, CAD and PCB data for the reference design are available [here](https://github.com/korginc/NTS-1-customizations/tree/master/CustomPanel_RevB)
 
