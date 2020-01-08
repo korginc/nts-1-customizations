@@ -54,10 +54,10 @@ The following softwares must be installed:
 2. Open the _Additional Boards Manager URLs_ editing window
 3. Add the following two URLs to the list:
 
- """
+```
  https://raw.githubusercontent.com/stm32duino/BoardManagerFiles/master/STM32/package_stm_index.json
  <TBD>
- """
+```
 
 4. Click OK for both windows, and open the _Boards Manager_ from the _Tools > Board:_ menu
 5. Search for _STM32 Cores_ and install version _1.7.0_
@@ -89,9 +89,9 @@ You can compile your Sketch without uploading it to the board by pressing the _V
 
 Upon success you should see something like the output below in the Arduino IDE console.
 
- """
+```
  <add output example>
- """
+```
 
 #### Uploading and Running
 
@@ -102,9 +102,9 @@ Once all prior steps have been completed. You can build and upload an Arduino Sk
 
 Upon successful programming of the board you should see something like the output below in the Arduino IDE console:
 
- """
+```
   <Add example success build/upload output>
- """
+```
 
 ### Other Programming Methods
 
