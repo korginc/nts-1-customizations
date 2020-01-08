@@ -18,7 +18,7 @@ author: KORG inc.
 email:
 description: > # this means to ignore newlines until "baseurl:"
  Official site for hardware customizations of the Nu:Tekt NTS-1 digital kit
- programmable synthesizers. Make your own custom interface using
+ programmable synthesizer. Make your own custom interface using
  reference schematics, CAD and PCB data, and the Arduino IDE compatible
  base firmware.
  
