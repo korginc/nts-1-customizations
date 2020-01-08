@@ -25,6 +25,8 @@ Once all parts of the BOM have been assembled, refer to the [schematics]() and [
 
 _add some links to SMD soldering tutorials?_
 
+## Assembly
+
 After completing the soldering, remove the interface panel of the NTS-1 digital kit and replace it with the custom panel.
 
 _note: NTS-1 main system has to be updated to at least version 1.10 in order to work with custom panels. Confirm the firmware version and update if needed before replacing the panel._
