@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_ja
 title: Assembly
 title_long: 組み立て
 permalink: /ja/doc/assembly/

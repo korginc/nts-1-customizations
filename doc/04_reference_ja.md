@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_ja
 title: Reference
 title_long: レファレンス
 permalink: /ja/doc/reference/
