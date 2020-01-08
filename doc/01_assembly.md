@@ -22,7 +22,7 @@ _todo add links to BOM in github + link to mouser BOM_
 
 ## Soldering
 
-Once all parts of the BOM have been acquired, refer to the [schematics]() and [placement diagram](), and solder each part its appropriate location on the PCB.
+Once all parts of the BOM have been acquired, refer to the [schematics]() and [placement diagram](), and solder each part to its appropriate location on the PCB.
 
 _add some links to SMD soldering tutorials?_
 
