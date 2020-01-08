@@ -27,7 +27,7 @@ We provide an open hardware reference panel design that can be used as a templat
     2. [Connecting the programmer](doc/programming/#connecting-the-programmer)
     3. [Programming with the Arduino IDE](doc/programming/#programming-with-the-arduino-ide)
  3. [Examples](doc/examples/)
-    1. [Blank Template](doc/examples/#blank-template): Bare minimum code required to build an arduino Sketch for the reference custom board
+    1. [Blank Template](doc/examples/#blank-template): Bare minimum code required to build an arduino Sketch
     2. [Sequencer Template](doc/examples/#sequencer-template): Basic 8 step sequencer with minimal user interface
     3. [Demo Boards](doc/examples/#demo-boards): Demo custom panel boards made for NAMM 2020
 
