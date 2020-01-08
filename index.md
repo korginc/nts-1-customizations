@@ -17,19 +17,19 @@ We provide an open hardware reference panel design that can be used as a templat
 
 ### Getting Started
 
-1. [Assembly](doc/assembly/)
-  1. [Preparing the PCB](doc/assembly/#preparing-the-pcb)
-  2. [Acquiring parts](doc/assembly/#acquiring-parts)
-  3. [Soldering](doc/assembly/#soldering)
-  4. [Assembling](doc/assembly/#assembling)
-2. [Programming](doc/programming/)
-  1. [Choosing a board programmer](doc/programming/#choosing-a-board-programmer)
-  2. [Connecting the programmer](doc/programming/#connecting-the-programmer)
-  3. [Programming with the Arduino IDE](doc/programming/#programming-with-the-arduino-ide)
-3. [Examples](doc/examples/)
-  1. [Blank Template](doc/examples/#blank-template): Bare minimum code required to build an arduino Sketch for the reference custom board
-  2. [Sequencer Template](doc/examples/#sequencer-template): Basic 8 step sequencer with minimal user interface
-  3. [Demo Boards](doc/examples/#demo-boards): Demo custom panel boards made for NAMM 2020
+ 1. [Assembly](doc/assembly/)
+    1. [Preparing the PCB](doc/assembly/#preparing-the-pcb)
+    2. [Acquiring parts](doc/assembly/#acquiring-parts)
+    3. [Soldering](doc/assembly/#soldering)
+    4. [Assembling](doc/assembly/#assembling)
+ 2. [Programming](doc/programming/)
+    1. [Choosing a board programmer](doc/programming/#choosing-a-board-programmer)
+    2. [Connecting the programmer](doc/programming/#connecting-the-programmer)
+    3. [Programming with the Arduino IDE](doc/programming/#programming-with-the-arduino-ide)
+ 3. [Examples](doc/examples/)
+    1. [Blank Template](doc/examples/#blank-template): Bare minimum code required to build an arduino Sketch for the reference custom board
+    2. [Sequencer Template](doc/examples/#sequencer-template): Basic 8 step sequencer with minimal user interface
+    3. [Demo Boards](doc/examples/#demo-boards): Demo custom panel boards made for NAMM 2020
 
 _Tip: Try out the Sequencer Template example first. Find usage instructions [here](doc/examples/#sequencer-template)_
 
