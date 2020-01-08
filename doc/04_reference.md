@@ -8,10 +8,10 @@ permalink: /doc/reference/
 
 ### Hardware
 
-* [Schematics]() : TODO
-* [kiCAD project]() : TODO
-* [PCB data]() : TODO
-* [Pin mappings]() : TODO
+* [Schematics](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/schematic.pdf)
+* [kiCAD project](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/KiCAD)
+* [PCB data](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/Gerber)
+* [Pin mappings](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/pinmap.pdf)
 
 ### Software
 
