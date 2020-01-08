@@ -8,6 +8,7 @@ permalink: /ja/
 The appearance and user interface of the [Nu:Tekt NTS-1 digital kit](https://www.korg.com/products/synthesizers/nts_1) synthesizer can be customized by replacing the front panel with a custom created one. This site provides the base material and guidance for the creation of such custom panels.
 
 _Note: Custom panels are supported by the NTS-1 digital kit firmware version 1.10 and newer_
+
 _Note: Firmware version 1.10 will be released late January 2020_
 
 ## Reference Custom Panel Design

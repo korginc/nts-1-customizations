@@ -32,6 +32,7 @@ _add some links to SMD soldering tutorials?_
 After completing the soldering, remove the interface panel of the NTS-1 digital kit and replace it with the custom panel.
 
 _Note: NTS-1 main system has to be updated to at least version 1.10 in order to work with custom panels. Confirm the firmware version and update if needed before replacing the panel._
+
 _Note: NTS-1 digital kit firmware version 1.10 will be released towards the end of January 2020._
 
 ![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg)
