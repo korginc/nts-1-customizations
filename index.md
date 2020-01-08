@@ -14,6 +14,6 @@ We provide an open hardware reference panel design that can be used as a templat
 
 Schematics, bill of materials, CAD and PCB data for the reference design are available [here](https://github.com/korginc/NTS-1-customizations/tree/master/CustomPanel_RevB)
 
-The reference panel design is compatible with the [Arduino IDE](https://www.arduino.cc/en/Main/Software) via a dedicated board definition package. See [Programming](/doc/programming/) for details.
+The reference panel design is compatible with the [Arduino IDE](https://www.arduino.cc/en/Main/Software) via a dedicated board definition package. See [Programming](doc/programming/) for details.
 
 
