@@ -6,16 +6,15 @@ permalink: /ja/doc/programming/
 language: ja
 ---
 
-## Programming Hardware
+## Choosing a Board Programmer
 
 The reference custom panel uses a [microcontroller (STM32F030R8)](https://www.st.com/en/microcontrollers-microprocessors/stm32f030r8.html) to scan for user interactions and communicate with the NTS-1 digital kit's main board. The most convenient way to program this microcontroller is via the exposed _SWD_ (4-pin) connector using an ST-LINK (or compatible) chip programmer, here are some examples:
 
-* Standalone programmer (mini): [STLINK-V3MINI](https://www.st.com/en/development-tools/stlink-v3mini.html)
-* Standalone programmer (modular): [STLINK-V3SET](https://www.st.com/en/development-tools/stlink-v3set.html)
-* Development board including programmer: [NUCLEO-F030R8](https://www.st.com/en/evaluation-tools/nucleo-f030r8.html)
-* OEM ST-LINK v2 compatible programmer dongles: i.e: [amazon](https://www.amazon.com/dp/B01J7N3RE6/ref=cm_sw_r_tw_dp_U_x_nkh.DbGGFNB6N) 
+* Nucleo board with built-in ST-LINK: [NUCLEO-F030R8](https://www.st.com/en/evaluation-tools/nucleo-f030r8.html)
+* Standalone ST-LINK: [STLINK-V3SET](https://www.st.com/en/development-tools/stlink-v3set.html)
+* OEM ST-LINK compatible USB dongles: i.e: [amazon](https://www.amazon.com/dp/B01J7N3RE6/ref=cm_sw_r_tw_dp_U_x_nkh.DbGGFNB6N) 
 
-_Caution! In the case of many OEM programmers the Vref pin provides 3.3V on that pin instead of monitoring it for reference voltage is they should, make sure to NOT connect the Vref pin on such programmers. To be sure use a voltmeter to check the Vref pin of the programmer, if you see a voltage on it do NOT connect it to the reference custom panel board. Official STLINK programmers do not have that problem._
+_Caution! Many OEM programmer dongles provide 3.3V on the Vref pin instead of monitoring it for reference voltage as they should, make sure NOT to connect the Vref pin of such programmers. Use a voltmeter to check the Vref pin of the programmer, if you detect a voltage on it do NOT connect it to the reference custom panel board. Official ST-LINK programmers do not have that problem._
 
 Female-female DuPont pin cables with 2.54mm pitch will also be required to connect your programmer to the SWD pins of the reference board (sometimes provided with the programmer). Depending on the programmer you use the SWD pins of the reference board may not be in the same order, carefully read your programmer's manual and make sure you connect the pins in the right order. ([splitable or individual pin cables](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) may be useful if you need to reorder the connections)
 
@@ -27,7 +26,7 @@ The ST-LINK compatible programmer should be connected to the _SWD_ connector in 
 
 _insert image_
 
-## Preventing Panel Reset
+### Preventing Panel Reset
 
 While programming and generally during firmware development, it is recommended to prevent the reference custom panel from being reset by the NTS-1 digital kit's main board when communication timeouts occur.
 
@@ -35,20 +34,18 @@ To prevent panel resets, set the jumper on connector _CN11_ to the _DEBUG_ posit
 
 The jumper can be placed back into the _NORMAL_ position when simply using the NTS-1 digital kit with the custom panel.
 
-## Programming Methods
-
-### Arduino IDE
+## Programming with the Arduino IDE
 
 An Arduino board definition package is provided for the reference custom panel, which allows to build firmwares from Arduino Sketches and program the microcontroller via the [Arduino IDE](https://www.arduino.cc/en/Main/Software). The board definition handles the low level details of the communication with the NTS-1 digital kit's main board, providing a high level interface suitable for fast prototyping.
 
-#### Requirements
+### Requirements
 
 The following softwares must be installed:
 
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 * [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
-#### Setting Up the Board Definition
+### Setting Up the Board Definition
 
 1. In the Arduino IDE, open the _Preferences_ from the _File_ menu
 2. Open the _Additional Boards Manager URLs_ editing window
@@ -64,7 +61,7 @@ The following softwares must be installed:
 6. Search for _NTS-1 Custom Panels_ and install version _1.0.0_
 7. Select _NTS-1 Custom Panel rev.B_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
 
-#### Serial Monitoring
+### Serial Monitoring
 
 Monitoring via the built-in Arduino Serial object is possible by using a USB-Serial adapter (based on FTDI RS232 chip), such as [this one](https://www.mouser.jp/ProductDetail/FTDI/LC234X?qs=sGAEpiMZZMve4%2FbfQkoj%252BI%252BbU1q%2FCxfr%2FqVjw5o%252BdnQ%3D) or [this one](https://www.amazon.com/dp/B07TXVRQ7V/ref=cm_sw_r_tw_dp_U_x_2jh.DbQX9MS4Y).
 
@@ -74,16 +71,16 @@ _insert image_
 
 If using the Arduino IDE serial monitor, select the COM port corresponding to the USB-Serial adapter in the _tools > port_ menu. External serial monitoring software can also be used, in which case refer to that software's documentation.
 
-#### Template Sketches
+### Example Sketches
 
-Some template Arduino Sketches are provided as examples and starting point for your own projects:
+Some examples Arduino Sketches are provided as starting points for your own projects:
 
-* Blank Template: bare minimum code required to build a Sketch with the NTS-1 Custom Panel board definition.
-* Sequencer Template: basic 8 step sequencer with user interface scanning and LED control implemented via timer driven interrupts
+* _Blank Template_: bare minimum code required to build a Sketch with the NTS-1 Custom Panel board definition.
+* _Sequencer Template_: basic 8 step sequencer with user interface scanning and LED control implemented via timer driven interrupts
 
 You can find the templates in the _NTS-1 Custom Panels_ group of the _File > Examples_ menu.
 
-#### Verify and Compile
+### Verify and Compile
 
 You can compile your Sketch without uploading it to the board by pressing the _Verify_ button, or by selecting _Verify/Compile_ in the _Sketch_ menu.
 
@@ -93,7 +90,7 @@ Upon success you should see something like the output below in the Arduino IDE c
  <add output example>
 ```
 
-#### Uploading and Running
+### Uploading and Running
 
 Once all prior steps have been completed. You can build and upload an Arduino Sketch to the reference custom panel board this way:
 
@@ -106,7 +103,7 @@ Upon successful programming of the board you should see something like the outpu
   <Add example success build/upload output>
 ```
 
-### Other Programming Methods
+## Other Programming Methods
 
 It is possible to program the reference custom panel directly using the [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html) software from STMicro, or any other compatible programming/on-chip debugger software (i.e.: [OpenOCD](http://openocd.org/)), however it will be necessary to install toolchains on your own and build the firmware from scratch. 
 
