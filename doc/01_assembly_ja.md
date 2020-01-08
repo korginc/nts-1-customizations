@@ -17,6 +17,8 @@ The reference design includes a minimal user interface in the form of 10 switche
 
 _add example list of pcb manufacturing services?_
 
+![NTS-1 Custom Panel Rev.B and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
+
 ## Acquiring Parts
 
 _todo add links to BOM in github + link to mouser BOM_
