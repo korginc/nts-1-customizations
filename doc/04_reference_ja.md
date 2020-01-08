@@ -10,10 +10,11 @@ language: ja
 
 ### Hardware
 
-* [Schematics]() : TODO
-* [kiCAD project]() : TODO
-* [PCB data]() : TODO
-* [Pin mappings]() : TODO
+* [Schematics](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf)
+* Bill of materials: [PDF](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/BOM-mouser.pdf) [XLS](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls)
+* [kiCAD project](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/KiCAD)
+* [PCB data](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/Gerber)
+* [Pin mappings](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf)
 
 ### Software
 
