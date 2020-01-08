@@ -8,6 +8,14 @@ language: ja
 
 ## NTS-1 Custom Panels
 
+Clone the github repository to obtain all files.
+
+ ```
+  $ git clone https://github.com/korginc/NTS-1-customizations.git
+ ```
+ 
+Or download the repository [as a zip file](https://github.com/korginc/NTS-1-customizations/archive/master.zip).
+
 ### Hardware
 
 * [Schematics](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf)
