@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name NTS-1_CustomPanel)(type Legacy)(uri ${KIPRJMOD}/NTS-1_CustomPanel.lib)(options "")(descr ""))
+)

@@ -1,0 +1,29 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3.3V
+D +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +3.3VRef
+D +3.3VRef
+K power-flag
+$ENDCMP
+#
+$CMP +3V3
+D +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +3V3Ref
+D +3.3VRef
+K power-flag
+$ENDCMP
+#
+$CMP R_Pack04_Split
+D 4 resistor network, parallel topology
+K R network parallel topology isolated
+F ~
+$ENDCMP
+#
+#End Doc Library
