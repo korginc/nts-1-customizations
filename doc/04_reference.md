@@ -12,7 +12,7 @@ Clone the github repository to obtain all files.
   $ git clone https://github.com/korginc/NTS-1-customizations.git
  ```
  
-Or download the repository [as a zip file](https://github.com/korginc/NTS-1-customizations/archive/master.zip).
+Or download [as a zip file](https://github.com/korginc/NTS-1-customizations/archive/master.zip).
 
 ### Hardware
 
