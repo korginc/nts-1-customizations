@@ -17,3 +17,5 @@ language: ja
 ### Circular Sequencer
 
 ### Effect Pedal
+
+### User Oscillator Editor

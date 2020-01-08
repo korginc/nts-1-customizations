@@ -16,3 +16,5 @@ permalink: /doc/examples/
 
 ### Effect Pedal
 
+### User Oscillator Editor
+
