@@ -15,7 +15,7 @@ We provide an open hardware reference panel design that can be used as a templat
 
 ![Reference Custom Panel Board Rev.B](assets/NTS-1_ref_cp_revb_front.jpg)
 
-### Getting Started
+## Getting Started
 
  1. [Assembly](doc/assembly/)
     1. [Preparing the PCB](doc/assembly/#preparing-the-pcb)
