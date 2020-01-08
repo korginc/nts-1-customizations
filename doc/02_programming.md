@@ -85,7 +85,8 @@ You can compile your Sketch without uploading it to the board by pressing the _V
 Upon success you should see something like the output below in the Arduino IDE console.
 
 ```
- <add output example>
+ Sketch uses 10832 bytes (16%) of program storage space. Maximum is 65536 bytes.
+ Global variables use 2112 bytes (25%) of dynamic memory, leaving 6080 bytes for local variables. Maximum is 8192 bytes.
 ```
 
 ### Uploading and Running
@@ -97,9 +98,41 @@ Once all prior steps have been completed. You can build and upload an Arduino Sk
 
 Upon successful programming of the board you should see something like the output below in the Arduino IDE console:
 
-```
-  <Add example success build/upload output>
-```
+ ```
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.2.0                  
+      -------------------------------------------------------------------
+
+    ST-LINK SN  : 066AFF535550755187255039
+    ST-LINK FW  : V2J34M25
+    Voltage     : 3.27V
+    SWD freq    : 4000 KHz
+    Connect mode: Under Reset
+    Reset mode  : Hardware reset
+    Device ID   : 0x440
+    Device name : STM32F05x/F030x8
+    Flash size  : 64 KBytes
+    Device type : MCU
+    Device CPU  : Cortex-M0
+
+    Memory Programming ...
+    Opening and parsing file: Blank_Template.ino.bin
+        File          : Blank_Template.ino.bin
+        Size          : 11056 Bytes
+        Address       : 0x08000000 
+
+    Erasing memory corresponding to segment 0:
+    Erasing internal memory sectors [0 10]
+    Download in Progress:
+  
+    File download complete
+    Time elapsed during download operation: 00:00:00.982
+    
+    RUNNING Program ... 
+        Address:      : 0x8000000
+    Application is running
+    Start operation achieved successfully
+ ```
 
 ## Other Programming Methods
 
