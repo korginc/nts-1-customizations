@@ -23,10 +23,10 @@ description: > # this means to ignore newlines until "baseurl:"
  base firmware.
  
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://korginc.github.io/logue-sdk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://korginc.github.io/nts-1-customizations" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: korg_inc
 github_username:  korginc
-github_repository: NTS-1-customizations
+github_repository: nts-1-customizations
 
 # Build settings
 markdown: kramdown
