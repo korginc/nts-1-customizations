@@ -21,7 +21,7 @@ _add example list of pcb manufacturing services?_
 
 The following parts are necessary to fully mount the reference board. 
 
-Full BOM: [PDF](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf) [Excel](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls).
+Full bill of materials: [PDF](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf), [Excel](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls)
 
 _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
