@@ -13,7 +13,9 @@ _Note: Firmware version 1.10 will be released late January 2020_
 
 ## Reference Custom Panel Design
 
-We provide an open hardware reference panel design that can be used as a template for the creation of original NTS-1 panel designs.
+We provide an open hardware reference panel design that can be used for prototyping and as a template for the creation of new custom NTS-1 panel designs.
+
+The reference design includes a minimal user interface in the form of 10 switches, 8 LEDs and a rotary, and also has Arduino shield compatible expansion connectors and [STM32 Nucleo-style](https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html) expansion connectors to simplify prototyping. 
 
 ![Reference Custom Panel Board Rev.B](assets/NTS-1_ref_cp_revb_front.jpg)
 
@@ -34,7 +36,3 @@ We provide an open hardware reference panel design that can be used as a templat
     3. [Demo Boards](doc/examples/#demo-boards): Demo custom panel boards made for NAMM 2020
 
 _Tip: Try out the Sequencer Template example first. Find usage instructions [here](doc/examples/#sequencer-template)_
-
-<!-- Schematics, bill of materials, CAD and PCB data for the reference design are available [here](https://github.com/korginc/NTS-1-customizations/tree/master/CustomPanel_RevB) -->
-
-<!-- The reference panel design is compatible with the [Arduino IDE](https://www.arduino.cc/en/Main/Software) via a dedicated board definition package. See [Programming](doc/programming/) for details. -->
