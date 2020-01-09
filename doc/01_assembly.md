@@ -16,7 +16,11 @@ _add example list of pcb manufacturing services?_
 
 ## Acquiring Parts
 
-The following parts are necessary to fully mount the reference board:
+The following parts are necessary to fully mount the reference board. 
+
+Full BOM: [PDF](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf) [Excel](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls).
+
+_Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
 | Manufacturer       | Description                                                           | Qty | Datasheet     |
 |:------------------ |:--------------------------------------------------------------------- |:--------:|:------------- |
@@ -43,10 +47,6 @@ The following parts are necessary to fully mount the reference board:
 | ALPS               | Tactile Switches RND 6.0x4.3mm 100gf                                  | 10  | [datasheet](https://www.mouser.com/catalog/specsheets/alps_alps-s-a0002902225-1.pdf) |
 | STMicroelectronics | ARM Microcontrollers - MCU Value-Line ARM MCU 64kB 48 MHz             |  1  | [datasheet](https://www.mouser.com/datasheet/2/389/stm32f030f4-956260.pdf) |
 | TE Connectivity    | Headers & Wire Housings 2 POS POST SHUNT                              | 1   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_SS_108-37006_D-876462.pdf) |
-
-The full bill of material is also available in [PDF](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf) and [Excel](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls) formats. 
-
-_Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
 ![NTS-1 Custom Panel Rev.B and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
 
