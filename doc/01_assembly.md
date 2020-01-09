@@ -52,9 +52,16 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 
 ## Soldering
 
-Once all parts of the BOM have been acquired, refer to the [schematics]() and [placement diagram](), and solder each part to its appropriate location on the PCB.
+Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf) and [mount diagram](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
 
-_add some links to SMD soldering tutorials?_
+### Soldering Tutorials
+
+There are many tutorials all over the internet, however not all of them cover surface mount devices which are required for the NTS-1 Custom Panel. The tutorial videos below do cover everything you need: 
+
+EEVblog Soldering Tutorial:
+* [EEVblog Soldering Tutorial Part 1: Tools](https://www.youtube.com/watch?v=J5Sb21qbpEQ)
+* [EEVblog Soldering Tutorial Part 2: Through Hole](https://www.youtube.com/watch?v=fYz5nIHH0iY)
+* [EEVblog Soldering Tutorial Part 3: Surface Mount](https://www.youtube.com/watch?v=fYz5nIHH0iY)
 
 ## Assembling
 
