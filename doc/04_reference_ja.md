@@ -8,14 +8,6 @@ language: ja
 
 ## NTS-1 Custom Panels
 
-Clone the github repository to obtain all files.
-
- ```
-  $ git clone https://github.com/korginc/NTS-1-customizations.git
- ```
- 
-Or download [as a zip file](https://github.com/korginc/NTS-1-customizations/archive/master.zip).
-
 ### Hardware
 
 * [Schematics](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf)
@@ -23,6 +15,14 @@ Or download [as a zip file](https://github.com/korginc/NTS-1-customizations/arch
 * [kiCAD project](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/KiCAD)
 * [PCB data](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/Gerber)
 * [Pin mappings](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf)
+
+Clone the github repository to obtain all files.
+
+ ```
+  $ git clone https://github.com/korginc/NTS-1-customizations.git
+ ```
+ 
+Or download [as a zip file](https://github.com/korginc/NTS-1-customizations/archive/master.zip).
 
 ### Software
 
