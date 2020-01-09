@@ -49,8 +49,16 @@ This template demonstrates how to use the NTS1 Class to trigger note on/off even
 
 ## Demo Boards
 
+To illustrate the possibilities of NTS-1 custom panels we built the following demos.
+
+### User Oscillator Editor
+
+![User Oscillator Editor](../assets/NTS-1_cp_user_osc_editor.jpg)
+
 ### Circular Sequencer
+
+![Circular Sequencer](../assets/NTS-1_cp_circular_seq.jpg)
 
 ### Effect Pedal
 
-### User Oscillator Editor
+![Effect Pedal](../assets/NTS-1_cp_effect_pedal.jpg)
