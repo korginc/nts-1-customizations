@@ -9,19 +9,19 @@ language: ja
 
 ## Preparing the PCB
 
-The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB). 
+The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB). 
 
-The [PCB Gerber data](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
+The [PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
 
 _add example list of pcb manufacturing services?_
 
-The provided [KiCAD project](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/KiCAD) can be used as a starting point to create your own custom panel designs.
+The provided [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB/KiCAD) can be used as a starting point to create your own custom panel designs.
 
 ## Acquiring Parts
 
 The following parts are necessary to fully mount the reference board. 
 
-Full bill of materials: [PDF](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf), [Excel](https://github.com/korginc/NTS-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls)
+Full bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls)
 
 _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
@@ -55,7 +55,7 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 
 ## Soldering
 
-Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf) and [mount diagram](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
+Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf) and [mount diagram](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevB/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
 
 ### Soldering Tutorials
 
