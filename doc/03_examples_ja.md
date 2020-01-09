@@ -55,10 +55,24 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 
 ![User Oscillator Editor](../assets/NTS-1_cp_user_osc_editor.jpg)
 
+* Arduino compatible shield with 2.4 inch TFT display
+* Dedicated control interface for user oscillators with 6 knobs and 1 encoder
+* Based on [Sequencer Template](#sequencer-template) Arduino Sketch
+
 ### Circular Sequencer
 
 ![Circular Sequencer](../assets/NTS-1_cp_circular_seq.jpg)
 
+* 16 Step Sequencer
+* Dedicated control for pitch on each step
+* Speed / direction control via central knob
+
 ### Effect Pedal
 
 ![Effect Pedal](../assets/NTS-1_cp_effect_pedal.jpg)
+
+* Stomp box shaped design
+* Dedicated reverb / delay controls
+* Dedicated modulation effects controls
+* 6.3 mm in/out jacks
+* Arduino based firmware
