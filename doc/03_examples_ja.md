@@ -31,6 +31,8 @@ This template contains the bare minimum required to build a project for the NTS-
    // Insert your loop code here
  }
  ```
+ 
+[See code on github](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/Arduino/examples/Blank_Template/Blank_Template.ino).
 
 ### Sequencer Template
 
@@ -42,6 +44,8 @@ This template demonstrates how to use the NTS1 Class to trigger note on/off even
 * Turning rotary 1/A while holding down switches 1 to 8 changes the pitch for those steps
 * Turning rotary 1/A while holding switch 10 changes the sequencer's tempo
 * Switch 9 start and stops the sequencer
+
+[See code on github](https://github.com/korginc/NTS-1-customizations/blob/master/Custom_Panel_RevB/Arduino/examples/Sequencer_Template/Sequencer_Template.ino).
 
 ## Demo Boards
 
