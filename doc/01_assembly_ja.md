@@ -9,13 +9,13 @@ language: ja
 
 ## Preparing the PCB
 
-The NTS-1 custom panel reference board is available as open hardware schematics, CAD and PCB data. The raw PCB data can be used as-is to order bare boards from a PCB manufacturing service near you. KiCAD project files are also provided to simplify the creation of original NTS-1 custom panels.
+The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB). 
 
-Find all necessary files in the [github repository](https://github.com/korginc/NTS-1-customizations).
-
-The reference design includes a minimal user interface in the form of 10 switches, 8 LEDs and a rotary, and also has Arduino shield compatible expansion connectors and [STM32 Nucleo-style](https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html) expansion connectors to simplify prototyping. 
+The [PCB Gerber data](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
 
 _add example list of pcb manufacturing services?_
+
+The provided [KiCAD project](https://github.com/korginc/NTS-1-customizations/tree/master/Custom_Panel_RevB/KiCAD) can be used as a starting point to create your own custom panel designs.
 
 ## Acquiring Parts
 
