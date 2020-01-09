@@ -56,9 +56,10 @@ Once all parts of the BOM have been acquired, refer to the [schematic](https://g
 
 ### Soldering Tutorials
 
-There are many tutorials all over the internet, however not all of them cover surface mount devices which are required for the NTS-1 Custom Panel. The tutorial videos below do cover everything you need: 
+There are many tutorials all over the internet, however not all of them cover surface mount devices which are required for the NTS-1 Custom Panel. 
 
-EEVblog Soldering Tutorial:
+The tutorial videos below do cover everything you need: 
+
 * [EEVblog Soldering Tutorial Part 1: Tools](https://www.youtube.com/watch?v=J5Sb21qbpEQ)
 * [EEVblog Soldering Tutorial Part 2: Through Hole](https://www.youtube.com/watch?v=fYz5nIHH0iY)
 * [EEVblog Soldering Tutorial Part 3: Surface Mount](https://www.youtube.com/watch?v=fYz5nIHH0iY)
