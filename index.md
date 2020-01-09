@@ -14,7 +14,7 @@ _Note: Firmware version 1.10 will be released late January 2020_
 
 We provide an open hardware reference panel design that can be used for prototyping and as a template for the creation of new custom NTS-1 panel designs.
 
-The reference design includes a minimal user interface in the form of 10 switches, 8 LEDs and a rotary, and also has Arduino shield compatible expansion connectors and [STM32 Nucleo-style](https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html) expansion connectors to simplify prototyping. 
+The reference design includes a minimal user interface in the form of 10 switches, 8 LEDs and a rotary, and also has Arduino shield compatible expansion connectors and ST-Morpho connectors like on the [STM32 Nucleo boards](https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html) to simplify prototyping. 
 
 ![Reference Custom Panel Board Rev.B](assets/NTS-1_ref_cp_revb_front.jpg)
 
