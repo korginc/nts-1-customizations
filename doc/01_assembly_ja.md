@@ -75,4 +75,6 @@ _Note: NTS-1 main system has to be updated to at least version 1.10 in order to 
 
 _Note: NTS-1 digital kit firmware version 1.10 will be released towards the end of January 2020._
 
-![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg)
+<!-- ![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg) -->
+
+{% include youtube.html id="Ct_vkzv_E_4" width="600" height="338" %}
