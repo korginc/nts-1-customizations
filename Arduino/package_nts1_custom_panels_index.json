@@ -14,10 +14,10 @@
           "architecture": "stm32",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/korginc/nts-1-customizations/releases/download/ArduinoBoards%2F1.0.0/NTS-1.tar.bz2",
-          "archiveFileName": "NTS-1.tar.bz2",
-          "checksum": "SHA-256:2e38b5c2766a29637cec37db63866d34816cc47d8d4328aeafdcc1a6d4057cff",
-          "size": "1447648",
+          "url": "https://github.com/korginc/nts-1-customizations/releases/download/ArduinoBoards%2F1.0.0/NTS-1_Custom_Panels_v1.0.0.tar.bz2",
+          "archiveFileName": "NTS-1_Custom_Panels_v1.0.0.tar.bz2",
+          "checksum": "SHA-256:28c7b503d46f0f378c74d6763d7dcdbbfa37eb6930eae696fd54dd9680cfbd25",
+          "size": "1455286",
           "boards": [
             {"name": "NTS-1 REF CP REVC"}
           ],
