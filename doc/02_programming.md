@@ -45,17 +45,17 @@ The following softwares must be installed:
 
 1. In the Arduino IDE, open the _Preferences_ from the _File_ menu
 2. Open the _Additional Boards Manager URLs_ editing window
-3. Add the following two URLs to the list:
+3. Add the following URL to the list:
 
 ```
- https://raw.githubusercontent.com/stm32duino/BoardManagerFiles/master/STM32/package_stm_index.json
  https://raw.githubusercontent.com/korginc/nts-1-customizations/master/Arduino/package_nts1_custom_panels_index.json
 ```
 
 4. Click OK for both windows, and open the _Boards Manager_ from the _Tools > Board:_ menu
 5. Search for _STM32 Cores_ and install version _1.7.0_
 6. Search for _NTS-1 Custom Panels_ and install version _1.0.0_
-7. Select _NTS-1 Custom Panel rev.C_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
+7. Select _NTS-1 Custom Panels_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
+8. Make sure the board listed in _Tools > Board part number:_ matches your board.
 
 ### Serial Monitoring
 
@@ -76,7 +76,7 @@ Some examples Arduino Sketches are provided as starting points for your own proj
 * _Blank Template_: bare minimum code required to build a Sketch with the NTS-1 Custom Panel board definition.
 * _Sequencer Template_: basic 8 step sequencer with user interface scanning and LED control implemented via timer driven interrupts
 
-You can find the templates in the _NTS-1 Custom Panels_ group of the _File > Examples_ menu.
+You can find the templates in the _File > Examples > NTS-1_ menu.
 
 ### Verify and Compile
 

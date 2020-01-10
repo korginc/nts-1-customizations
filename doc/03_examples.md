@@ -6,7 +6,7 @@ permalink: /doc/examples/
 
 ## Arduino Sketch Examples
 
-Arduino Sketch examples can be found in the _NTS-1 Custom Panels_ group of the _File > Examples_ menu, or obtained from the [GitHub repository](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/examples).
+Arduino Sketch examples can be found in the _File > Examples > NTS-1_ menu, or obtained from the [GitHub repository](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/library/NTS-1).
 
 ### Blank Template
 
@@ -30,7 +30,7 @@ This template contains the bare minimum required to build a project for the NTS-
  }
  ```
 
-[See code on GitHub](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/Arduino/examples/Blank_Template/Blank_Template.ino).
+[See code on GitHub](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/Arduino/libraries/NTS-1/examples/Blank_Template/Blank_Template.ino).
 
 ### Sequencer Template
 
@@ -43,7 +43,7 @@ This template demonstrates how to use the NTS1 Class to trigger note on/off even
 * Turning rotary 1/A while holding switch 10 changes the sequencer's tempo
 * Switch 9 start and stops the sequencer
 
-[See code on GitHub](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/Arduino/examples/Sequencer_Template/Sequencer_Template.ino).
+[See code on GitHub](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/Arduino/libraries/NTS-1/examples/Sequencer_Template/Sequencer_Template.ino).
 
 ## Demo Boards
 
