@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://github.com/korginc/nts-1-customizations/releases/download/ArduinoBoards%2F1.0.0/NTS-1_Custom_Panels_v1.0.0.tar.bz2",
           "archiveFileName": "NTS-1_Custom_Panels_v1.0.0.tar.bz2",
-          "checksum": "SHA-256:28c7b503d46f0f378c74d6763d7dcdbbfa37eb6930eae696fd54dd9680cfbd25",
-          "size": "1455286",
+          "checksum": "SHA-256:724d13ea934af0e47e37956bc531b31a43715509d1b2c6308f2bcc3aa8ef048c",
+          "size": "1453478",
           "boards": [
             {"name": "NTS-1 REF CP REVC"}
           ],
