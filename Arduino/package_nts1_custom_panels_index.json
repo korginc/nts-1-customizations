@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "NTS-1_Custom_Panels",
+          "name": "NTS-1 Custom Panels",
           "architecture": "stm32",
           "version": "1.0.0",
           "category": "Contributed",
