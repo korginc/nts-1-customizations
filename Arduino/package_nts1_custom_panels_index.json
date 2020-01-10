@@ -23,17 +23,17 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "STM32",
+              "packager": "NTS-1 Custom Panels",
               "name": "arm-none-eabi-gcc",
               "version": "8.2.1-1.7"
             },
             {
-              "packager": "STM32",
+              "packager": "NTS-1 Custom Panels",
               "name": "STM32Tools",
               "version": "1.3.1"
             },
             {
-              "packager": "STM32",
+              "packager": "NTS-1 Custom Panels",
               "name": "CMSIS",
               "version": "5.5.1"
             }
