@@ -48,7 +48,7 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 | STMicroelectronics | ARM Microcontrollers - MCU Value-Line ARM MCU 64kB 48 MHz             |  1  | [datasheet](https://www.mouser.com/datasheet/2/389/stm32f030f4-956260.pdf) |
 | TE Connectivity    | Headers & Wire Housings 2 POS POST SHUNT                              | 1   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_SS_108-37006_D-876462.pdf) |
 
-![NTS-1 Custom Panel Rev.C and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
+![NTS-1 Custom Panel and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
 
 ## Soldering
 

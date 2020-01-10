@@ -55,7 +55,7 @@ The following softwares must be installed:
 4. Click OK for both windows, and open the _Boards Manager_ from the _Tools > Board:_ menu
 5. Search for _STM32 Cores_ and install version _1.7.0_
 6. Search for _NTS-1 Custom Panels_ and install version _1.0.0_
-7. Select _NTS-1 Custom Panel rev.B_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
+7. Select _NTS-1 Custom Panel rev.C_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
 
 ### Serial Monitoring
 
@@ -65,7 +65,7 @@ _Caution! The NTS-1 Custom Panel Reference Board is not 5V tolerant. Please do N
 
 Connect the USB-Serial adapter to the _SERIAL_ connector in the following way:
 
-![NTS-1 Custom Panel Rev.C Serial Monitor Connection](../assets/NTS-1_ref_cp_revb_serial_adapter.jpg)
+![NTS-1 Custom Panel Serial Monitor Connection](../assets/NTS-1_ref_cp_revb_serial_adapter.jpg)
 
 If using the Arduino IDE serial monitor, select the COM port corresponding to the USB-Serial adapter in the _tools > port_ menu. External serial monitoring software can also be used, in which case refer to that software's documentation.
 
