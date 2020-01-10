@@ -55,7 +55,9 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 * Dedicated control interface for user oscillators with 6 knobs and 1 encoder
 * Based on [Sequencer Template](#sequencer-template) Arduino Sketch
 
-![User Oscillator Editor](../assets/NTS-1_cp_user_osc_editor.jpg)
+<!-- ![User Oscillator Editor](../assets/NTS-1_cp_user_osc_editor.jpg) -->
+
+{% include youtube.html id="OLPdzcWtkU0" width="600" height="338" %}
 
 ### Circular Sequencer
 
@@ -63,7 +65,9 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 * Dedicated control for pitch on each step
 * Speed / direction control via central knob
 
-![Circular Sequencer](../assets/NTS-1_cp_circular_seq.jpg)
+<!-- ![Circular Sequencer](../assets/NTS-1_cp_circular_seq.jpg) -->
+
+{% include youtube.html id="g7DgtZCX0os" width="600" height="338" %}
 
 ### Effect Pedal
 
@@ -73,4 +77,6 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 * 6.3 mm in/out jacks
 * Arduino based firmware
 
-![Effect Pedal](../assets/NTS-1_cp_effect_pedal.jpg)
+<!-- ![Effect Pedal](../assets/NTS-1_cp_effect_pedal.jpg) -->
+
+{% include youtube.html id="bchihPYJ73E" width="600" height="338" %}
