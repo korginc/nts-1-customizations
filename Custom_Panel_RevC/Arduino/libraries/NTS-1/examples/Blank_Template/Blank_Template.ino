@@ -28,7 +28,7 @@
 //*/
 
 // --- NTS-1 main board interface ------------------------------------------------------------------
-#include <nts1.h>
+#include <nts-1.h>
 
 NTS1 nts1;
 
