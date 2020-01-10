@@ -2,11 +2,11 @@
   "packages": [
     {
       "name": "NTS-1 Custom Panels",
-      "websiteURL": "http://www.korg.com",
+      "websiteURL": "http://korginc.github.io/nts-1-customizations/",
       "maintainer": "KORG",
       "email": "",
       "help": {
-        "online": "http://www.korg.com/"
+        "online": "http://korginc.github.io/nts-1-customizations/programming/"
       },
       "platforms": [
         {
