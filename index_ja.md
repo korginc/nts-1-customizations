@@ -17,7 +17,7 @@ We provide an open hardware reference panel design that can be used for prototyp
 
 The reference design includes a minimal user interface in the form of 10 switches, 8 LEDs and a rotary, and also has Arduino shield compatible expansion connectors and ST-Morpho connectors like on the [STM32 Nucleo boards](https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html) to simplify prototyping. 
 
-![Reference Custom Panel Board Rev.B](assets/NTS-1_ref_cp_revb_front.jpg)
+![Reference Custom Panel Board Rev.C](assets/NTS-1_ref_cp_revb_front.jpg)
 
 ## Getting Started
 

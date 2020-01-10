@@ -6,19 +6,19 @@ permalink: /doc/assembly/
 
 ## Preparing the PCB
 
-The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB). 
+The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC). 
 
-The [PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
+The [PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
 
 _add example list of pcb manufacturing services?_
 
-The provided [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevB/KiCAD) can be used as a starting point to create your own custom panel designs.
+The provided [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/KiCAD) can be used as a starting point to create your own custom panel designs.
 
 ## Acquiring Parts
 
 The following parts are necessary to fully mount the reference board. 
 
-Full bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevB/BOM-mouser.xls)
+Full bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
 
 _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
@@ -48,11 +48,11 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 | STMicroelectronics | ARM Microcontrollers - MCU Value-Line ARM MCU 64kB 48 MHz             |  1  | [datasheet](https://www.mouser.com/datasheet/2/389/stm32f030f4-956260.pdf) |
 | TE Connectivity    | Headers & Wire Housings 2 POS POST SHUNT                              | 1   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_SS_108-37006_D-876462.pdf) |
 
-![NTS-1 Custom Panel Rev.B and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
+![NTS-1 Custom Panel Rev.C and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
 
 ## Soldering
 
-Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevB/schematic.pdf) and [mount diagram](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevB/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
+Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf) and [mount diagram](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
 
 ### Soldering Tutorials
 

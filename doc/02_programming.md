@@ -20,7 +20,7 @@ Female-female DuPont pin cables with 2.54mm pitch will also be required to conne
 
 The ST-LINK compatible programmer should be connected to the _SWD_ connector in the following way:
 
-![NTS-1 Custom Panel Rev.B SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
+![NTS-1 Custom Panel Rev.C SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
 
 ### Preventing Panel Reset
 
@@ -65,7 +65,7 @@ _Caution! The NTS-1 Custom Panel Reference Board is not 5V tolerant. Please do N
 
 Connect the USB-Serial adapter to the _SERIAL_ connector in the following way:
 
-![NTS-1 Custom Panel Rev.B Serial Monitor Connection](../assets/NTS-1_ref_cp_revb_serial_adapter.jpg)
+![NTS-1 Custom Panel Rev.C Serial Monitor Connection](../assets/NTS-1_ref_cp_revb_serial_adapter.jpg)
 
 If using the Arduino IDE serial monitor, select the COM port corresponding to the USB-Serial adapter in the _tools > port_ menu. External serial monitoring software can also be used, in which case refer to that software's documentation.
 
