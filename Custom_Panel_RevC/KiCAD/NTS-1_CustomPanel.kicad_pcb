@@ -13,7 +13,8 @@
   (title_block
     (title "NTS-1 Custom Panel PCB")
     (date 2019-12-27)
-    (rev A)
+    (rev C)
+    (company "KORG INC.")
     (comment 1 "NTS-1 digital kit")
     (comment 2 "Kazuya Miura")
     (comment 3 "Kazuya Miura")
@@ -43,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.2)
     (user_trace_width 0.2)
     (user_trace_width 0.3)
     (trace_clearance 0.15)
@@ -7550,7 +7551,7 @@
   (gr_text o (at 108.8712 63.54999) (layer B.SilkS) (tstamp 5E01CCA8)
     (effects (font (size 0.1 0.1) (thickness 0.1)) (justify left))
   )
-  (gr_text REV.B (at 144.59948 83.79999) (layer F.SilkS) (tstamp 5E01D0DD)
+  (gr_text REV.C (at 144.59948 83.79999) (layer F.SilkS) (tstamp 5E01D0DD)
     (effects (font (size 1 1) (thickness 0.1)) (justify left))
   )
   (gr_text POWER (at 194.7 128.1) (layer F.SilkS) (tstamp 5E01D116)

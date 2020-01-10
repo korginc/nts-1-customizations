@@ -1,4 +1,4 @@
-update=2020/01/08 10:52:37
+update=2020/01/10 8:03:35
 version=1
 last_client=kicad
 [general]
@@ -14,7 +14,7 @@ LibDir=
 [eeschema/libraries]
 [pcbnew]
 version=1
-PageLayoutDescrFile=schematic_outline_korg.kicad_wks
+PageLayoutDescrFile=document_outline_korg.kicad_wks
 LastNetListRead=NTS-1_CustomPanel.net
 CopperLayerCount=2
 BoardThickness=1.6
@@ -61,7 +61,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=1
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -242,7 +242,7 @@ dPairGap=0.15
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=schematic_outline_korg.kicad_wks
+PageLayoutDescrFile=document_outline_korg.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65

@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-3*
-G04 #@! TF.CreationDate,2019-12-27T15:31:14+09:00*
-G04 #@! TF.ProjectId,NTS-1_CustomPanel,4e54532d-315f-4437-9573-746f6d50616e,A*
+G04 #@! TF.CreationDate,2020-01-10T08:04:25+09:00*
+G04 #@! TF.ProjectId,NTS-1_CustomPanel,4e54532d-315f-4437-9573-746f6d50616e,C*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2019-12-27 15:31:14*
+G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-01-10 08:04:25*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*

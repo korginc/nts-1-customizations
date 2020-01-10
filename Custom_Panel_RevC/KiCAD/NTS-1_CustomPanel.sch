@@ -6,8 +6,8 @@ encoding utf-8
 Sheet 1 1
 Title "NTS-1 Custom Panel Schematic"
 Date "2019-12-25"
-Rev "A"
-Comp ""
+Rev "C"
+Comp "KORG INC."
 Comment1 "NTS-1 digital kit"
 Comment2 "Yoshihito Yamada"
 Comment3 "Kazuya Miura"
