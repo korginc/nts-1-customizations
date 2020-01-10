@@ -49,7 +49,7 @@ The following softwares must be installed:
 
 ```
  https://raw.githubusercontent.com/stm32duino/BoardManagerFiles/master/STM32/package_stm_index.json
- <TBD>
+ https://raw.githubusercontent.com/korginc/nts-1-customizations/master/arduino_boards.json
 ```
 
 4. Click OK for both windows, and open the _Boards Manager_ from the _Tools > Board:_ menu
