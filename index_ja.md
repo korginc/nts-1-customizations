@@ -11,7 +11,7 @@ _Note: Custom panels are supported by the NTS-1 digital kit firmware version 1.1
 
 _Note: Firmware version 1.10 will be released late January 2020_
 
-{% include youtube-autoplay.html id="dL5zSNJrvd8" width="600" height="338" %}
+{% include youtube.html id="dL5zSNJrvd8" width="600" height="338" %}
 
 ## Reference Custom Panel Design
 
