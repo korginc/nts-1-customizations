@@ -6,7 +6,7 @@ permalink: /doc/examples/
 
 ## Arduino Sketch Examples
 
-Arduino Sketch examples can be found in the _File > Examples > NTS-1_ menu, or obtained from the [GitHub repository](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/library/NTS-1).
+Arduino Sketch examples can be found in the _File > Examples > NTS-1_ menu, or obtained from the [GitHub repository](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/libraries/NTS-1).
 
 ### Blank Template
 
