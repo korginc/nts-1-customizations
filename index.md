@@ -10,6 +10,8 @@ _Note: Custom panels are supported by the NTS-1 digital kit firmware version 1.1
 
 _Note: Firmware version 1.10 will be released late January 2020_
 
+{% include youtube-autoplay.html id=dL5zSNJrvd8 width=850 height=375 %}
+
 ## Reference Custom Panel Design
 
 We provide an open hardware reference panel design that can be used for prototyping and as a template for the creation of new custom NTS-1 panel designs.
