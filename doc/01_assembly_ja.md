@@ -37,7 +37,7 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 | Yageo              | Thick Film Resistors - SMD 47K OHM 5%                                 | 1   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
 | KEMET              | Multilayer Ceramic Capacitors - SMD 16V 0.1uF 0603 X7R 10%            | 4   | [datasheet](https://www.mouser.com/datasheet/2/212/KEM_C1090_X7R_ESD-1103328.pdf) |
 | KEMET              | Multilayer Ceramic Capacitors - SMD 16V 1000pF 0603 X7R 10% AEC-Q200  | 2   | [datasheet](https://www.mouser.com/datasheet/2/212/KEM_C1090_X7R_ESD-1103328.pdf) |
-| KEMET              | Multilayer Ceramic Capacitors - SMD 16V 10uF X5R 0805 10%             | 1   | [datasheet](https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf) |
+| KEMET              | Multilayer Ceramic Capacitors - SMD 16V 1uF X5R 0805 10%              | 1   | [datasheet](https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf) |
 | TE Connectivity    | Headers & Wire Housings 38 MODII HDR DRST UNSHRD .100                 | 2   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_CD_87215_J4-642383.pdf) |
 | TE Connectivity    | Headers & Wire Housings 1X02P RCPT HV-100 TE                          | 1   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_CD_215299_E-1247332.pdf) |
 | TE Connectivity    | Headers & Wire Housings 6P RECPT VERT HV-100                          | 1   | [datasheet](https://www.mouser.com/datasheet/2/418/NG_CD_215299_E-1247285.pdf) |
