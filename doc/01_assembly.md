@@ -74,4 +74,4 @@ _Note: NTS-1 digital kit firmware version 1.10 will be released towards the end 
 
 <!-- ![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg) -->
 
-{% include youtube.html id="Ct_vkzv_E_4" width="600" height="338" %}
+{% include youtube.html id="Ct_vkzv_E_4" width="744" height="419" %}

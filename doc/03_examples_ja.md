@@ -59,7 +59,7 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 
 <!-- ![User Oscillator Editor](../assets/NTS-1_cp_user_osc_editor.jpg) -->
 
-{% include youtube.html id="OLPdzcWtkU0" width="600" height="338" %}
+{% include youtube.html id="OLPdzcWtkU0" width="744" height="419" %}
 
 ### Circular Sequencer
 
@@ -69,7 +69,7 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 
 <!-- ![Circular Sequencer](../assets/NTS-1_cp_circular_seq.jpg) -->
 
-{% include youtube.html id="g7DgtZCX0os" width="600" height="338" %}
+{% include youtube.html id="g7DgtZCX0os" width="744" height="419" %}
 
 ### Effect Pedal
 
@@ -81,4 +81,4 @@ To illustrate the possibilities of NTS-1 custom panels we built the following de
 
 <!-- ![Effect Pedal](../assets/NTS-1_cp_effect_pedal.jpg) -->
 
-{% include youtube.html id="bchihPYJ73E" width="600" height="338" %}
+{% include youtube.html id="bchihPYJ73E" width="744" height="419" %}
