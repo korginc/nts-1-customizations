@@ -6,99 +6,100 @@ permalink: /ja/doc/programming/
 language: ja
 ---
 
-## Choosing a Board Programmer
+## 書き込み装置を選ぶ
 
-The reference custom panel uses a [microcontroller (STM32F030R8)](https://www.st.com/en/microcontrollers-microprocessors/stm32f030r8.html) to scan for user interactions and communicate with the NTS-1 digital kit's main board. The most convenient way to program this microcontroller is via the exposed _SWD_ (4-pin) connector using an ST-LINK (or compatible) chip programmer, here are some examples:
+NTS-1 カスタム・パネルは[マイクロ・コントローラー(STM32F030R8)](https://www.st.com/en/microcontrollers-microprocessors/stm32f030r8.html)　を使って操作子のスキャン、メイン・ボードとの通信を行っています。このマイクロ・コントローラーに書き込みするためにはSWDポート（4ピンのコネクターで配置されています）にST-LINK互換の書き込み装置を接続する必要があります。下記にいくつかの書き込み装置の例を提示します。
 
 * Nucleo board with built-in ST-LINK: [NUCLEO-F030R8](https://www.st.com/en/evaluation-tools/nucleo-f030r8.html)
 * Standalone ST-LINK: [STLINK-V3SET](https://www.st.com/en/development-tools/stlink-v3set.html)
 * OEM ST-LINK compatible USB dongles: i.e: [amazon](https://www.amazon.com/dp/B01J7N3RE6/ref=cm_sw_r_tw_dp_U_x_nkh.DbGGFNB6N) 
 
-_Caution! Many OEM programmer dongles provide 3.3V on the Vref pin instead of monitoring it for reference voltage as they should, make sure NOT to connect the Vref pin of such programmers. Use a voltmeter to check the Vref pin of the programmer, if you detect a voltage on it do NOT connect it to the reference custom panel board. Official ST-LINK programmers do not have that problem._
+_STMicro純正ではないOEMの書き込み装置はVrefピン（ターゲットの電圧監視をする端子）に3.3Vの出力をしているものがあります。その場合このピンはカスタム・パネルのSWD Vref端子に接続しないでください。書き込み装置が故障する原因となります。_
 
-Female-female DuPont pin cables with 2.54mm pitch will also be required to connect your programmer to the SWD pins of the reference board (sometimes provided with the programmer). Depending on the programmer you use the SWD pins of the reference board may not be in the same order, carefully read your programmer's manual and make sure you connect the pins in the right order. ([splitable or individual pin cables](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) may be useful if you need to reorder the connections)
+書き込み装置とカスタム・パネルは通常2.54mmピッチのメスーメスコネクタで接続する必要があります。書き込み装置のマニュアルを参照し、ピンの順番を間違えないよう慎重に接続を行ってください。
 
-## Connecting the Programmer
+## 接続
 
-The ST-LINK compatible programmer should be connected to the _SWD_ connector in the following way:
+ST-LINK互換のプログラマーはSWDコネクターに下記のように接続できます。
 
-![NTS-1 Custom Panel Rev.C SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
+![NTS-1 Custom Panel SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
 
-### Preventing Panel Reset
+### パネル・リセットを設定する
 
-While programming and generally during firmware development, it is recommended to prevent the reference custom panel from being reset by the NTS-1 digital kit's main board when communication timeouts occur.
+ファームウェアの書き込みを行うとき、またカスタム・パネル単独でのデバッグを行う際、NTS-1のメイン・ボードからのリセットを止めておく必要があります。設定を行わない場合、通信のタイムアウトなどが発生する可能性があります
 
-To prevent panel resets, set the jumper on connector _CN11_ to the _DEBUG_ position.
+ _CN11_ のジャンパー・ピンを _NORMAL_ の位置にするとメイン・ボードからのリセットが動作します（通常動作）。
+ 
+ _DEBUG_ の位置にするとメイン・ボードからリセットされなくなります。
 
-The jumper can be placed back into the _NORMAL_ position when simply using the NTS-1 digital kit with the custom panel.
 
-## Programming with the Arduino IDE
+## Arduino IDEで書き込みを行う
 
-An Arduino board definition package is provided for the reference custom panel, which allows to build firmwares from Arduino Sketches and program the microcontroller via the [Arduino IDE](https://www.arduino.cc/en/Main/Software). The board definition handles the low level details of the communication with the NTS-1 digital kit's main board, providing a high level interface suitable for fast prototyping.
+[Arduino IDE](https://www.arduino.cc/en/Main/Software)のboard definition パッケージが提供されており、リファレンス基板のファームウェアはArduinoのスケッチ一覧から入手、書き込みを行うことが出来ます。Board definitionはNTS-1のメイン・ボードとの基本的な通信部分を担っており、それによりユーザーは具体的なプロトタイピングに集中することができます。
 
-### Requirements
+### 必要なもの
 
-The following softwares must be installed:
+下記のソフトウェアをインストールする必要があります：
 
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 * [STM32 Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
-### Setting Up the Board Definition
+### Board Definitionを設定する
 
-1. In the Arduino IDE, open the _Preferences_ from the _File_ menu
-2. Open the _Additional Boards Manager URLs_ editing window
-3. Add the following two URLs to the list:
+1.	Arduino IDEを起動し、_ファイル_ メニューで _環境設定_ を開きます
+2.	_追加のボードマネージャのURL_ の編集ウインドウを開きます
+3.	下記のURLをリストに加えます
 
 ```
- https://raw.githubusercontent.com/stm32duino/BoardManagerFiles/master/STM32/package_stm_index.json
  https://raw.githubusercontent.com/korginc/nts-1-customizations/master/Arduino/package_nts1_custom_panels_index.json
 ```
 
-4. Click OK for both windows, and open the _Boards Manager_ from the _Tools > Board:_ menu
-5. Search for _NTS-1 Custom Panels_ and install version _1.0.0_
-6. Select _NTS-1 Custom Panels_ from the _Tools > Board:_ menu in the _NTS-1 Custom Panels_ group
-7. Make sure the board listed in _Tools > Board part number:_ matches your board.
+4.	両方のウインドウをOKを押して閉じ、 _ツール>ボード：_ メニューから _ボードマネージャ_ を開きます
+5.	_NTS-1 Custom Panels_ を検索し、 version 1.0.0 をインストールします
+6.	_ツール>ボード：_ メニューから _NTS-1 Custom Panels_ のグループから _NTS-1 Custom Panel rev.C_ を選択します。
+7.	_ツール > Board part number:_ に表示されているのが使用する基板と一致していることを確認します。
+
 
 ### Serial Monitoring
 
-Monitoring via the built-in Arduino Serial object is possible by using a USB-Serial adapter (based on FTDI RS232 chip), such as [this one](https://www.mouser.jp/ProductDetail/FTDI/LC234X?qs=sGAEpiMZZMve4%2FbfQkoj%252BI%252BbU1q%2FCxfr%2FqVjw5o%252BdnQ%3D) or [this one](https://www.amazon.com/dp/B07TXVRQ7V/ref=cm_sw_r_tw_dp_U_x_2jh.DbQX9MS4Y).
+一般的なUSBシリアルアダプター（STDI RS232チップ採用品）を使用することで、Arduino IDEに備えられているシリアルモニタを使うことが出来ます。[参考1](https://www.mouser.jp/ProductDetail/FTDI/LC234X?qs=sGAEpiMZZMve4%2FbfQkoj%252BI%252BbU1q%2FCxfr%2FqVjw5o%252BdnQ%3D) もしくは [参考2](https://www.amazon.com/dp/B07TXVRQ7V/ref=cm_sw_r_tw_dp_U_x_2jh.DbQX9MS4Y) のようなものがあります。
 
-_Caution! The NTS-1 Custom Panel Reference Board is not 5V tolerant. Please do NOT connect 5V powered device. USB serial adapters sometimes have jumpers to select 3.3V or 5V operation mode, make sure to set it to 3.3V._
+_注意: NTS-1 カスタム・パネルは5Vトレラントではありません。そのため、5V駆動のデバイスは接続しないでください。USBシリアル・アダプターは3.3V/5Vの設定ができる場合があるので、その時は3.3Vモードを使用してください。_
 
-Connect the USB-Serial adapter to the _SERIAL_ connector in the following way:
+USBシリアルアダプターをカスタム・パネルの _SERIAL_ コネクターに接続します。
 
 ![NTS-1 Custom Panel Serial Monitor Connection](../assets/NTS-1_ref_cp_revb_serial_adapter.jpg)
 
-If using the Arduino IDE serial monitor, select the COM port corresponding to the USB-Serial adapter in the _tools > port_ menu. External serial monitoring software can also be used, in which case refer to that software's documentation.
+Arduino IDEのシリアルモニタを使用する場合、接続されているUSBシリアルアダプターに該当するCOMポートが設定されていることを確かめて下さい。_ツール>シリアルポート_ から設定可能です。
 
-### Example Sketches
+### スケッチ例
 
-Some examples Arduino Sketches are provided as starting points for your own projects:
+独自のカスタム・パネルを作成するにあたり、下記のサンプルケッチが提供されています。
+_・Blank Template: NTS-1 カスタム・パネルを動作させるのに最小限なコードが含まれたスケッチです。_
+_・Sequencer Template: リファレンス・パネルのスイッチとLED, VRを利用して8ステップシーケンサーが動作するスケッチです。タイマー割り込みによりイベントがトリガーされています。_
 
-* _Blank Template_: bare minimum code required to build a Sketch with the NTS-1 Custom Panel board definition.
-* _Sequencer Template_: basic 8 step sequencer with user interface scanning and LED control implemented via timer driven interrupts
+これらのスケッチは _ファイル > スケッチ例 > NTS-1_ から開くことができます。
 
-You can find the templates in the _File > Examples > NTS-1_ menu.
+### ベリファイとコンパイル
 
-### Verify and Compile
+_検証_ ボタンを押すと、作成したスケッチを実機にアップロードすること無くコンパイルしてみることが出来ます。もしくはスケッチメニューの _検証・コンパイル_ を選んでも同じです。
 
-You can compile your Sketch without uploading it to the board by pressing the _Verify_ button, or by selecting _Verify/Compile_ in the _Sketch_ menu.
+コンパイルが成功するとArduino IDEのコンソールに下記のようなメッセージが表示されます。
 
-Upon success you should see something like the output below in the Arduino IDE console.
 
 ```
  Sketch uses 10832 bytes (16%) of program storage space. Maximum is 65536 bytes.
  Global variables use 2112 bytes (25%) of dynamic memory, leaving 6080 bytes for local variables. Maximum is 8192 bytes.
 ```
 
-### Uploading and Running
+### アップロードと実行
 
-Once all prior steps have been completed. You can build and upload an Arduino Sketch to the reference custom panel board this way:
+ここまでのステップが完了したら、Arduinoスケッチをカスタム・パネルにアップロードします。
 
-1. Make sure _Tools > Upload Method:_ is set to _SWD_.
-2. Press the _Upload_ button, or select _Upload_ from the _Sketch_ menu.
+1. _ツール>Upload Method_ をSWDに設定します。
+2. _マイコンボードに書き込む_ ボタンを押します。_スケッチ_ メニューからでもアクセス可能です。
 
-Upon successful programming of the board you should see something like the output below in the Arduino IDE console:
+ボードへの書き込みが完了したら、Arduino IDEのコンソールに下記のようなメッセージが表示されます。
 
  ```
       -------------------------------------------------------------------

@@ -7,26 +7,25 @@ language: ja
 ---
 
 
-## Preparing the PCB
+## 基板を準備する
 
-The NTS-1 Custom Panel reference board is open hardware and all source/description files are available [on GitHub](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC). 
+NTS-1 カスタム・パネルはオープン・ハードウェアであり、全ての設計資料は[GitHub](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC)で公開されています。 
 
-The [PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
+リファレンス基板の[PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber)を使えば、すぐに一般的な基板製造サービスでベアボードを注文することが可能です。
 
-_add example list of pcb manufacturing services?_
+またリファレンス基板は[KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/KiCAD)プロジェクト形式でも提供されています。このファイルを使って独自のパネルデザインを始めることができます。
 
-The provided [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/KiCAD) can be used as a starting point to create your own custom panel designs.
+## 部品を準備する
 
-## Acquiring Parts
+リファレンス基板を作成するためには下記リストの部品が必要です。
 
-The following parts are necessary to fully mount the reference board. 
+部品表データ：[PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
 
-Full bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
+_Tip：このエクセルファイルを[Mouser](https://www.mouser.com)にアップロードすることで自動的に必要な部品をカートに追加することが出来ます_
 
-_Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
 
 | Manufacturer       | Description                                                           | Qty | Datasheet     |
-|:------------------ |:--------------------------------------------------------------------- |:--------:|:------------- |
+|:------------------ |:--------------------------------------------------------------------- |:---:|:------------- |
 | Yageo              | Thick Film Resistors - SMD ZERO OHM JUMPER                            | 1   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
 | Yageo              | Thick Film Resistors - SMD 33 OHM 5%                                  | 1   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
 | Yageo              | Thick Film Resistors - SMD 47 OHM 5%                                  | 4   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
@@ -53,27 +52,26 @@ _Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.co
 
 ![NTS-1 Custom Panel and Parts](../assets/NTS-1_ref_cp_revb_assembly.jpg)
 
-## Soldering
+## 部品のハンダ付け
 
-Once all parts of the BOM have been acquired, refer to the [schematic](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf) and [mount diagram](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/mount_diagram.pdf), and solder each part to its appropriate location on the PCB.
+全ての部品が揃ったら、[回路図](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)や[マウント図](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/mount_diagram.pdf)を参考にハンダ付けを行います。
 
-### Soldering Tutorials
+### ハンダ付けのチュートリアル
 
-There are many tutorials all over the internet, however not all of them cover surface mount devices which are required for the NTS-1 Custom Panel. 
+ハンダ付けに関しての様々なチュートリアルがインターネット上にありますが、NTS-1カスタム・パネルでは表面実装部品のハンダ付けが必要であり、少し迷ってしまうかもしれません。
 
-The tutorial videos below do cover everything you need: 
+例えば下記のチュートリアルには必要な技術が全て紹介されています：
 
 * [EEVblog Soldering Tutorial Part 1: Tools](https://www.youtube.com/watch?v=J5Sb21qbpEQ)
 * [EEVblog Soldering Tutorial Part 2: Through Hole](https://www.youtube.com/watch?v=fYz5nIHH0iY)
 * [EEVblog Soldering Tutorial Part 3: Surface Mount](https://www.youtube.com/watch?v=fYz5nIHH0iY)
 
-## Assembling
+## 組み立て
 
-After completing the soldering, remove the interface panel of the NTS-1 digital kit and replace it with the custom panel.
+ハンダ付けが終わったらNTS-1のインターフェース・パネルを取り外して新たに作成したパネルに交換しましょう。
 
-_Note: NTS-1 main system has to be updated to at least version 1.10 in order to work with custom panels. Confirm the firmware version and update if needed before replacing the panel._
-
-_Note: NTS-1 digital kit firmware version 1.10 will be released towards the end of January 2020._
+_Note: NTS-1 カスタムパネルは本体のシステムバージョン1.10以降でサポートされています_
+_Note: このシステムバージョン1.10は2020年1月末にリリース予定です_
 
 <!-- ![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg) -->
 

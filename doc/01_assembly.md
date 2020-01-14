@@ -10,8 +10,6 @@ The NTS-1 Custom Panel reference board is open hardware and all source/descripti
 
 The [PCB Gerber data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber) can be used as-is to order bare boards from a PCB manufacturing service near you. 
 
-_add example list of pcb manufacturing services?_
-
 The provided [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/KiCAD) can be used as a starting point to create your own custom panel designs.
 
 ## Acquiring Parts
@@ -20,10 +18,10 @@ The following parts are necessary to fully mount the reference board.
 
 Full bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
 
-_Tip: The Excel file can be uploaded directly to [Mouser](https://www.mounser.com) to automatically fill your cart with the appropriate parts._
+_Tip: The Excel file can be uploaded directly to [Mouser](https://www.mouser.com) to automatically fill your cart with the appropriate parts._
 
 | Manufacturer       | Description                                                           | Qty | Datasheet     |
-|:------------------ |:--------------------------------------------------------------------- |:--------:|:------------- |
+|:------------------ |:--------------------------------------------------------------------- |:---:|:------------- |
 | Yageo              | Thick Film Resistors - SMD ZERO OHM JUMPER                            | 1   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
 | Yageo              | Thick Film Resistors - SMD 33 OHM 5%                                  | 1   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |
 | Yageo              | Thick Film Resistors - SMD 47 OHM 5%                                  | 4   | [datasheet](https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1664068.pdf) |

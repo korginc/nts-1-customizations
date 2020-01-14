@@ -20,7 +20,7 @@ Female-female DuPont pin cables with 2.54mm pitch will also be required to conne
 
 The ST-LINK compatible programmer should be connected to the _SWD_ connector in the following way:
 
-![NTS-1 Custom Panel Rev.C SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
+![NTS-1 Custom Panel SWD Connection to Nucleo ST-Link](../assets/NTS-1_ref_cp_revb_swd.jpg)
 
 ### Preventing Panel Reset
 

@@ -10,19 +10,19 @@ language: ja
 
 ### Hardware
 
-* [Schematics](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)
-* Bill of materials: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
+* [回路図](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)
+* 部品表: [PDF](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.pdf), [Excel](https://github.com/korginc/nts-1-customizations/raw/master/Custom_Panel_RevC/BOM-mouser.xls)
 * [KiCAD project](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/KiCAD)
 * [PCB data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber)
 * [Pin mappings](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)
 
-Clone the GitHub repository to obtain all files.
+全てのファイルを入手するには、GitHubリポジトリをクローンして下さい。
 
  ```
   $ git clone https://github.com/korginc/nts-1-customizations.git
  ```
  
-Or [download as a zip file](https://github.com/korginc/nts-1-customizations/archive/master.zip).
+もしくは、 [download as a zip file](https://github.com/korginc/nts-1-customizations/archive/master.zip).
 
 ### Software
 
@@ -33,5 +33,3 @@ Or [download as a zip file](https://github.com/korginc/nts-1-customizations/arch
 * [NTS1 class reference](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/libraries/NTS-1)
 * [Basic API usage]() : TODO
 * [Fast digital read/write]() : TODO
-
-
