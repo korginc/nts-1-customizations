@@ -22,13 +22,13 @@ Clone the GitHub repository to obtain all files.
  
 Or [download as a zip file](https://github.com/korginc/nts-1-customizations/archive/master.zip).
 
-### Software
+<!-- ### Software -->
 
-* [Main board communication protocol]() : TODO
+<!-- * [Main board communication protocol]() -->
 
 ### Arduino Board API
 
 * [NTS1 class reference](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Arduino/libraries/NTS-1)
-* [Basic API usage]() : TODO
-* [Fast digital read/write]() : TODO
+<!-- * [Basic API usage]() -->
+<!-- * [Fast digital read/write]() -->
 
