@@ -19,8 +19,7 @@ email:
 description: > # this means to ignore newlines until "baseurl:"
  Official site for hardware customizations of the Nu:Tekt NTS-1 digital kit
  programmable synthesizer. Make your own custom interface using
- reference schematics, CAD and PCB data, and the Arduino IDE compatible
- base firmware.
+ reference schematics, CAD and PCB data, and libraries for the Arduino IDE.
  
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://korginc.github.io/nts-1-customizations" # the base hostname & protocol for your site, e.g. http://example.com
