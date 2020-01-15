@@ -34,8 +34,8 @@ _Note: このシステムバージョン1.10は2020年1月末にリリース予�
     2. [接続](doc/programming/#接続)
     3. [Arduino IDEで書き込みを行う](doc/programming/#arduino-ideで書き込みを行う)
  3. [作成例](doc/examples/)
-    1. [Blank Template](doc/examples/#blank-template): Bare minimum code required to build an arduino Sketch
-    2. [Sequencer Template](doc/examples/#sequencer-template): Basic 8 step sequencer with minimal user interface
-    3. [Demo Boards](doc/examples/#demo-boards): Demo custom panel boards made for NAMM 2020
+    1. [Blank Template](doc/demo/#blank-template): Bare minimum code required to build an arduino Sketch
+    2. [Sequencer Template](doc/demo/#sequencer-template): Basic 8 step sequencer with minimal user interface
+    3. [Demo Boards](doc/demo/#demo-boards): Demo custom panel boards made for NAMM 2020
 
 _Tip: Try out the Sequencer Template example first. Find usage instructions [here](doc/examples/#sequencer-template)_
