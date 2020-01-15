@@ -4,11 +4,155 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 
 ### API Constants
 
-TODO
+#### Success Statuses
+* **`NTS1::STATUS_OK`**: Operation completed without error
+* **`NTS1::STATUS_ERR`**: Operation failed with error
+* **`NTS1::STATUS_BUSY`**: Operation failed due to ongoing concurent operation
+* **`NTS1::STATUS_TIMEOUT`**: Operation timed out
+
+#### Transmittable Event IDs
+* **`NTS1::TX_EVENT_ID_NOTE_OFF`**: Note off event
+* **`NTS1::TX_EVENT_ID_NOTE_ON`**: Note on event
+* **`NTS1::TX_EVENT_ID_REQ_UNIT_COUNT`**: Request number of specified unit types
+* **`NTS1::TX_EVENT_ID_REQ_UNIT_DESC`**: Request descritptor for specified unit
+* **`NTS1::TX_EVENT_ID_REQ_EDIT_PARAM_DESC`**: Request descriptor for specified edit parameter
+* **`NTS1::TX_EVENT_ID_REQ_VALUE`**: Request current value for given parameter
+
+#### Receiveable Event IDs
+* **`NTS1::RX_EVENT_ID_NOTE_OFF`**: Note off event
+* **`NTS1::RX_EVENT_ID_NOTE_ON`**: Note on event
+* **`NTS1::RX_EVENT_ID_UNIT_DESC`**: Unit descriptor
+* **`NTS1::RX_EVENT_ID_EDIT_PARAM_DESC`**: Edit parameter descriptor
+* **`NTS1::RX_EVENT_ID_VALUE`**: Parameter value
+
+#### Main Parameter IDs
+##### Oscillator
+* **`NTS1::PARAM_ID_OSC_TYPE`**: Oscillator type/index (0, num of osc.)
+* **`NTS1::PARAM_ID_OSC_SHAPE`**: Shape parameter (0, 1023)
+* **`NTS1::PARAM_ID_OSC_SHIFT_SHAPE`**: Alternate shape parameter (0, 1023)
+* **`NTS1::PARAM_ID_OSC_LFO_RATE`**: LFO rate (0, 1023)
+* **`NTS1::PARAM_ID_OSC_LFO_DEPTH`**: LFO depth (0, 1023)
+* **`NTS1::PARAM_ID_OSC_EDIT`**: Edit parameter when available, see PARAM_SUBID
+
+##### Filter
+* **`NTS1::PARAM_ID_FILT_TYPE`**: Filter type/index (0, 6)
+* **`NTS1::PARAM_ID_FILT_CUTOFF`**: Filter cutoff frequency (0, 1023)
+* **`NTS1::PARAM_ID_FILT_PEAK`**: Filter resonance (0, 1023)
+* **`NTS1::PARAM_ID_FILT_LFO_RATE`**: Sweep rate (0, 1023)
+* **`NTS1::PARAM_ID_FILT_LFO_DEPTH`**: Sweep depth (0, 1023)
+
+##### Amplitude E.G.
+* **`NTS1::PARAM_ID_AMPEG_TYPE`**: Envelope type/index (0, 4)
+* **`NTS1::PARAM_ID_AMPEG_ATTACK`**: Envelope attack time (0, 1023)
+* **`NTS1::PARAM_ID_AMPEG_RELEASE`**: Envelope release time (0, 1023)
+* **`NTS1::PARAM_ID_AMPEG_LFO_RATE`**: Tremollo rate (0, 1023)
+* **`NTS1::PARAM_ID_AMPEG_LFO_DEPTH`**: Tremollo depth (0, 1023)
+
+##### Modulation Effect
+* **`NTS1::PARAM_ID_MOD_TYPE`**: Modulation effect type/index (0, num of mod. fx)
+* **`NTS1::PARAM_ID_MOD_TIME`**: Time parameter (0, 1023)
+* **`NTS1::PARAM_ID_MOD_DEPTH`**: Depth parameter (0, 1023)
+
+##### Delay Effect
+* **`NTS1::PARAM_ID_DEL_TYPE`**: Delay effect type/index (0, num of del. fx)
+* **`NTS1::PARAM_ID_DEL_TIME`**: Time parameter (0, 1023)
+* **`NTS1::PARAM_ID_DEL_DEPTH`**: Depth parameter (0, 1023)
+* **`NTS1::PARAM_ID_DEL_MIX`**: Wet/dry mix parameter (0, 1023)
+
+##### Reverb Effect
+* **`NTS1::PARAM_ID_REV_TYPE`**: Reverb effect type/index (0, num of rev. fx)
+* **`NTS1::PARAM_ID_REV_TIME`**: Time parameter (0, 1023)
+* **`NTS1::PARAM_ID_REV_DEPTH`**: Depth parameter (0, 1023)
+* **`NTS1::PARAM_ID_REV_MIX`**: Wet/dry mix parameter (0, 1023)
+
+##### Meta Parameters
+* **`NTS1::PARAM_ID_SYS_VERSION`**: Current main board system version. 
+* **`NTS1::PARAM_ID_INVALID`**: Invalid parameter ID
+
+#### Sub Parameter IDs
+##### Oscillator
+* **`NTS1::PARAM_SUBID_OSC_EDIT1`**
+* **`NTS1::PARAM_SUBID_OSC_EDIT2`** 
+* **`NTS1::PARAM_SUBID_OSC_EDIT3`** 
+* **`NTS1::PARAM_SUBID_OSC_EDIT4`** 
+* **`NTS1::PARAM_SUBID_OSC_EDIT5`** 
+* **`NTS1::PARAM_SUBID_OSC_EDIT6`**
+* **`NTS1::INVALID_PARAM_SUB_ID`**: 
+
+#### Parameter Type
+* **`NTS1::EDIT_PARAM_TYPE_PERCENT`**
+* **`NTS1::EDIT_PARAM_TYPE_PERCENT_BIPOLAR`**
+* **`NTS1::EDIT_PARAM_TYPE_SELECT`**
 
 ### API Data Types
 
-TODO
+#### Receiveable Types
+
+* **`nts1_rx_param_change_t`**:
+
+```
+  typedef struct nts1_rx_param_change {
+    uint8_t param_id;
+    uint8_t param_subid;
+    uint8_t msb;         // 7 bit
+    uint8_t lsb;         // 7 bit
+  } nts1_rx_param_change_t;
+```
+
+* **`nts1_rx_note_off_t`**:
+
+```
+  typedef struct {
+    uint8_t  note;
+    uint8_t  padding;
+  } nts1_rx_note_off_t;
+```
+
+* **`nts1_rx_note_on_t`**:
+
+```
+  typedef struct {
+    uint8_t  note;
+    uint8_t  velocity;
+  } nts1_rx_note_on_t;
+```
+
+* **`nts1_rx_value_t`**:
+
+```
+  typedef struct {
+    uint8_t  req_id;
+    uint8_t  main_id;
+    uint8_t  sub_id;
+    uint8_t  padding;
+    uint16_t value;
+    uint8_t padding2[10];
+  } nts1_rx_value_t;
+```
+
+* **`nts1_rx_unit_desc_t`**:
+
+```
+  typedef struct {
+    uint8_t  main_id;
+    uint8_t  sub_id;
+    uint8_t  param_count;
+    char     name[13];
+  } nts1_rx_unit_desc_t;
+```
+
+* **`nts1_rx_edit_param_desc_t`**:
+
+```
+  typedef struct {
+    uint8_t  main_id;
+    uint8_t  sub_id;
+    uint8_t  value_type;
+     int8_t  min;
+     int8_t  max;
+    char     name[13];
+  } nts1_rx_edit_param_desc_t;
+```
 
 ### API Functions
 
