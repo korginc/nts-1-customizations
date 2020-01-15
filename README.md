@@ -7,7 +7,7 @@ Make your own custom interface using reference schematics, CAD and PCB data, and
 ## Repo Content
 
 * _Arduino/package_nts1_custom_panels_index.json_: Arduino IDE package Boards Manager package description file
-* _Custom_Panel_RevC/_: Hardware project and files for NTS-1 Custom Panel reference board revision C and associated libraries.
+* _Custom_Panel_RevC/_: Content specific to NTS-1 Custom Panel reference board revision C
   * _Arduino/libraries/_: Arduino IDE libraries
   * _Gerber/_: Raw PCB Gerber data output
   * _KiCAD/_: [KiCAD](https://kicad-pcb.org/) project
@@ -19,4 +19,4 @@ Make your own custom interface using reference schematics, CAD and PCB data, and
 
 ## Assembly/Programming
 
-Refer to the [companion web site](https://korginc.github.io/) for assembly/programming instructions, examples and further reference.
+Refer to the [companion web site](https://korginc.github.io/nts-1-customizations) for assembly/programming instructions, examples and further reference.
