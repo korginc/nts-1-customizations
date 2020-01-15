@@ -86,9 +86,18 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 
 ### API Data Types
 
+#### Handlers for Received Messages
+
+* **`typedef void (*nts1_note_off_event_handler)(const nts1_rx_note_off_t *)`**
+* **`typedef void (*nts1_note_on_event_handler)(const nts1_rx_note_on_t *)`**
+* **`typedef void (*nts1_unit_desc_event_handler)(const nts1_rx_unit_desc_t *)`**
+* **`typedef void (*nts1_edit_param_desc_event_handler)(const nts1_rx_edit_param_desc_t *)`**
+* **`typedef void (*nts1_value_event_handler)(const nts1_rx_value_t *)`**
+* **`typedef void (*nts1_param_change_handler)(const nts1_rx_param_change_t *)`**
+
 #### Receiveable Types
 
-* **`nts1_rx_param_change_t`**:
+* **`nts1_rx_param_change_t`**
 
 ```
   typedef struct nts1_rx_param_change {
@@ -99,7 +108,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
   } nts1_rx_param_change_t;
 ```
 
-* **`nts1_rx_note_off_t`**:
+* **`nts1_rx_note_off_t`**
 
 ```
   typedef struct {
@@ -108,7 +117,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
   } nts1_rx_note_off_t;
 ```
 
-* **`nts1_rx_note_on_t`**:
+* **`nts1_rx_note_on_t`**
 
 ```
   typedef struct {
@@ -117,7 +126,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
   } nts1_rx_note_on_t;
 ```
 
-* **`nts1_rx_value_t`**:
+* **`nts1_rx_value_t`**
 
 ```
   typedef struct {
@@ -130,7 +139,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
   } nts1_rx_value_t;
 ```
 
-* **`nts1_rx_unit_desc_t`**:
+* **`nts1_rx_unit_desc_t`**
 
 ```
   typedef struct {
@@ -141,7 +150,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
   } nts1_rx_unit_desc_t;
 ```
 
-* **`nts1_rx_edit_param_desc_t`**:
+* **`nts1_rx_edit_param_desc_t`**
 
 ```
   typedef struct {
