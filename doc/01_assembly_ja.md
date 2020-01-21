@@ -71,7 +71,7 @@ _Tip：このエクセルファイルを[Mouser](https://www.mouser.com)にア�
 ハンダ付けが終わったらNTS-1のインターフェース・パネルを取り外して新たに作成したパネルに交換しましょう。
 
 _Note: NTS-1 カスタムパネルは本体のシステムバージョン1.10以降でサポートされています_
-_Note: このシステムバージョン1.10は2020年1月末にリリース予定です_
+_Note: このシステムバージョン1.10は2020年2月末にリリース予定です_
 
 <!-- ![Replacing the NTS-1 digital kit's Panel](../assets/NTS-1_ref_cp_revb_replace.jpg) -->
 

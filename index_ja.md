@@ -10,7 +10,7 @@ permalink: /ja/
 
 _Note: NTS-1 カスタムパネルは本体のシステムバージョン1.10以降でサポートされています。_
 
-_Note: このシステムバージョン1.10は2020年1月末にリリース予定です。_
+_Note: このシステムバージョン1.10は2020年2月末にリリース予定です。_
 
 {% include youtube.html id="dL5zSNJrvd8" width="744" height="419" %}
 
@@ -33,7 +33,7 @@ _Note: このシステムバージョン1.10は2020年1月末にリリース予�
     1. [書き込み装置を選ぶ](doc/programming/#書き込み装置を選ぶ)
     2. [接続](doc/programming/#接続)
     3. [Arduino IDEで書き込みを行う](doc/programming/#arduino-ideで書き込みを行う)
- 3. [作成例](doc/examples/)
+ 3. [作成例](doc/demo/)
     1. [Blank Template](doc/demo/#blank-template): Bare minimum code required to build an arduino Sketch
     2. [Sequencer Template](doc/demo/#sequencer-template): Basic 8 step sequencer with minimal user interface
     3. [Demo Boards](doc/demo/#demo-boards): Demo custom panel boards made for NAMM 2020

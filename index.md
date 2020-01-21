@@ -8,7 +8,7 @@ The appearance and user interface of the [Nu:Tekt NTS-1 digital kit](https://www
 
 _Note: Custom panels are supported by the NTS-1 digital kit firmware version 1.10 and newer_
 
-_Note: Firmware version 1.10 will be released late January 2020_
+_Note: Firmware version 1.10 will be released late February 2020_
 
 {% include youtube.html id="dL5zSNJrvd8" width="744" height="419" %}
 
