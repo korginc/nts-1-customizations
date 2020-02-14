@@ -44,7 +44,7 @@
           "architecture": "stm32",
           "version": "1.0.1",
           "category": "Contributed",
-          "url": "https://github.com/korginc/nts-1-customizations/releases/download/ArduinoBoards%2F1.0.0/NTS-1_Custom_Panels_v1.0.1.tar.bz2",
+          "url": "https://github.com/korginc/nts-1-customizations/releases/download/ArduinoBoards%2F1.0.1/NTS-1_Custom_Panels_v1.0.1.tar.bz2",
           "archiveFileName": "NTS-1_Custom_Panels_v1.0.1.tar.bz2",
           "checksum": "SHA-256:21b0b1defc97f52c7e41189dc2cd15f586efc5cb8231eb128be19e285184d576",
           "size": "1449829",
