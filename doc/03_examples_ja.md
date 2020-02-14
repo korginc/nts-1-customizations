@@ -15,7 +15,7 @@ Arduino Sketch examples can be found in the _File > Examples > NTS-1_ menu, or o
 This template contains the bare minimum required to build a project for the NTS-1 Custom Panel reference board:
 
  ```
- #include <nts1.h>
+ #include <nts-1.h>
 
  NTS1 nts1;
 
