@@ -35,7 +35,7 @@ static NTS1 *sNts1Instance = nullptr;
 
 static nts1_note_off_event_handler sNoteOffEventHandler = nullptr;
 static nts1_note_on_event_handler sNoteOnEventHandler = nullptr; 
-static nts1_beat_tick_event_handler sBeatTickEventHandler = nullptr;
+static nts1_step_tick_event_handler sStepTickEventHandler = nullptr;
 static nts1_unit_desc_event_handler sUnitDescEventHandler = nullptr;
 static nts1_edit_param_desc_event_handler sEditParamDescEventHandler = nullptr;
 static nts1_value_event_handler sValueEventHandler = nullptr;
@@ -60,8 +60,8 @@ void NTS1::setNoteOnEventHandler(nts1_note_on_event_handler handler) {
   sNoteOnEventHandler = handler;
 }
 
-void NTS1::setBeatTickEventHandler(nts1_beat_tick_event_handler handler) {
-  sBeatTickEventHandler = handler;
+void NTS1::setStepTickEventHandler(nts1_step_tick_event_handler handler) {
+  sStepTickEventHandler = handler;
 }
 
 void NTS1::setUnitDescEventHandler(nts1_unit_desc_event_handler handler) {
@@ -95,9 +95,9 @@ void nts1_handle_note_on_event(const nts1_rx_note_on_t *note_on) {
 }
 
 extern "C" __attribute__((weak))
-void nts1_handle_beat_tick_event(const nts1_rx_event_header_t *event) { 
-  if (sBeatTickEventHandler != nullptr) {
-    sBeatTickEventHandler(event);
+void nts1_handle_step_tick_event(void) { 
+  if (sStepTickEventHandler != nullptr) {
+    sStepTickEventHandler();
   }
 }
 

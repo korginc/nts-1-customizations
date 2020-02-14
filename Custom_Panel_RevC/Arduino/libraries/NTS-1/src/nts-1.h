@@ -79,7 +79,7 @@ class NTS1 {
   enum {
         RX_EVENT_ID_NOTE_OFF        = 0x0U,
         RX_EVENT_ID_NOTE_ON         = 0x1U,
-        RX_EVENT_ID_BEAT_TICK       = 0x2U,
+        RX_EVENT_ID_STEP_TICK       = 0x2U,
         RX_EVENT_ID_UNIT_DESC       = 0x11U,
         RX_EVENT_ID_PARAM_DESC      = 0x12U,
         RX_EVENT_ID_VALUE           = 0x13U,
@@ -154,12 +154,17 @@ class NTS1 {
         PARAM_ID_ARP_PATTERN = PARAM_ID_ARP_BASE,
         PARAM_ID_ARP_INTERVALS,
         PARAM_ID_ARP_LENGTH,
-        PARAM_ID_ARP_LAST = PARAM_ID_ARP_LENGTH,
+        PARAM_ID_ARP_STATE,
+        PARAM_ID_ARP_TEMPO,
+        PARAM_ID_ARP_LAST = PARAM_ID_ARP_TEMPO,
         
         NUM_PARAM_ID, // end regular param IDs
         
         // SPECIAL PARAM IDS
-        PARAM_ID_SYS_VERSION = NUM_PARAM_ID, // read-only
+        PARAM_ID_SYS_BASE = NUM_PARAM_ID,
+        PARAM_ID_SYS_VERSION = PARAM_ID_SYS_BASE, // read-only
+        PARAM_ID_SYS_GLOBAL,
+        PARAM_ID_SYS_LAST = PARAM_ID_SYS_GLOBAL,
         
         PARAM_ID_INVALID = 0x7FU,
 
@@ -171,12 +176,14 @@ class NTS1 {
         NUM_DEL_PARAM_ID   = PARAM_ID_DEL_LAST - PARAM_ID_DEL_BASE,
         NUM_REV_PARAM_ID   = PARAM_ID_REV_LAST - PARAM_ID_REV_BASE,
         NUM_ARP_PARAM_ID   = PARAM_ID_ARP_LAST - PARAM_ID_ARP_BASE,
+        NUM_SYS_PARAM_ID   = PARAM_ID_SYS_LAST - PARAM_ID_SYS_BASE,
   };
 
   /**
-   * Parameter Sub-IDs
+   * Osc Edit Parameter Sub-IDs
    */  
   enum {
+        // Osc edit parameters
         PARAM_SUBID_OSC_BASE  = 0U,
         PARAM_SUBID_OSC_EDIT1 = PARAM_SUBID_OSC_BASE,
         PARAM_SUBID_OSC_EDIT2,
@@ -185,8 +192,33 @@ class NTS1 {
         PARAM_SUBID_OSC_EDIT5,
         PARAM_SUBID_OSC_EDIT6,
         PARAM_SUBID_OSC_LAST = PARAM_SUBID_OSC_EDIT6,
-        NUM_OSC_PARAM_SUB_ID,
-        INVALID_PARAM_SUB_ID = 0xFU,
+        NUM_OSC_PARAM_SUBID,
+  };
+
+  /**
+   * Global Parameter Sub-IDs
+   */  
+  enum {
+        PARAM_SUBID_SYS_GLOBAL_BASE = 0,
+        PARAM_SUBID_SYS_GLOBAL_INPUT_ROUTE = PARAM_SUBID_SYS_GLOBAL_BASE,
+        PARAM_SUBID_SYS_GLOBAL_INPUT_TRIM,
+        PARAM_SUBID_SYS_GLOBAL_SYNCOUT_POLARITY,
+        PARAM_SUBID_SYS_GLOBAL_SYNCIN_POLARITY,
+        PARAM_SUBID_SYS_GLOBAL_TEMPO_RANGE,
+        PARAM_SUBID_SYS_GLOBAL_CLOCK_SOURCE,
+        PARAM_SUBID_SYS_GLOBAL_SHORT_MESSAGE,
+        PARAM_SUBID_SYS_GLOBAL_MIDI_ROUTE,
+        PARAM_SUBID_SYS_GLOBAL_MIDI_CHANNEL,
+        PARAM_SUBID_SYS_GLOBAL_SYNC_STEP,
+        PARAM_SUBID_SYS_GLOBAL_LAST = PARAM_SUBID_SYS_GLOBAL_SYNC_STEP,
+        NUM_SYS_GLOBAL_PARAM_SUBID,
+  };
+
+  /**
+   * Meta Sub-IDs
+   */  
+  enum {
+        INVALID_PARAM_SUBID = 0xFU,
   };
 
   /**
@@ -245,6 +277,13 @@ class NTS1 {
   }
 
   /**
+   * Request value of given parameter from the NTS-1 main board
+   */  
+  static inline uint8_t reqParamValue(uint8_t id, uint8_t subid) {
+    return nts1_req_param_value(id, subid);
+  }
+  
+  /**
    * Request number of oscillators from the NTS-1 main board
    */  
   static inline uint8_t reqOscCount(void) {
@@ -276,7 +315,7 @@ class NTS1 {
    * Request filter descriptor from the NTS-1 main board
    */  
   static inline uint8_t reqFilterDesc(uint8_t idx) {
-    return nts1_req_ampeg_desc(idx);
+    return nts1_req_filt_desc(idx);
   }
   
   /**
@@ -336,6 +375,34 @@ class NTS1 {
   }
 
   /**
+   * Request number of arp. patterns from the NTS-1 main board
+   */
+  static inline uint8_t reqArpPatternCount(void) {
+    return nts1_req_arp_pattern_count();
+  }
+
+  /**
+   * Request arp. pattern descriptor from the NTS-1 main board
+   */  
+  static inline uint8_t reqArpPatternDesc(uint8_t idx) {
+    return nts1_req_arp_pattern_desc(idx);
+  }
+
+  /**
+   * Request number of arp. intervalss from the NTS-1 main board
+   */
+  static inline uint8_t reqArpIntervalsCount(void) {
+    return nts1_req_arp_intervals_count();
+  }
+
+  /**
+   * Request arp. intervals descriptor from the NTS-1 main board
+   */  
+  static inline uint8_t reqArpIntervalsDesc(uint8_t idx) {
+    return nts1_req_arp_intervals_desc(idx);
+  }
+  
+  /**
    * Register a handler function for received note off events
    */  
   void setNoteOffEventHandler(nts1_note_off_event_handler handler);
@@ -346,9 +413,9 @@ class NTS1 {
   void setNoteOnEventHandler(nts1_note_on_event_handler handler);
 
   /**
-   * Register a handler function for received beat tick events
+   * Register a handler function for received step tick events
    */  
-  void setBeatTickEventHandler(nts1_beat_tick_event_handler handler);
+  void setStepTickEventHandler(nts1_step_tick_event_handler handler);
 
   /**
    * Register a handler function for received unit descriptor events
