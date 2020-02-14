@@ -21,6 +21,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 #### Receiveable Event IDs
 * **`NTS1::RX_EVENT_ID_NOTE_OFF`**: Note off event
 * **`NTS1::RX_EVENT_ID_NOTE_ON`**: Note on event
+* **`NTS1::RX_EVENT_ID_STEP_TICK`**: Step tick event
 * **`NTS1::RX_EVENT_ID_UNIT_DESC`**: Unit descriptor
 * **`NTS1::RX_EVENT_ID_EDIT_PARAM_DESC`**: Edit parameter descriptor
 * **`NTS1::RX_EVENT_ID_VALUE`**: Parameter value
@@ -65,8 +66,16 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 * **`NTS1::PARAM_ID_REV_DEPTH`**: Depth parameter (0, 1023)
 * **`NTS1::PARAM_ID_REV_MIX`**: Wet/dry mix parameter (0, 1023)
 
+##### Arpeggiator
+* **`NTS1::PARAM_ID_ARP_PATTERN`**: Arpeggiator pattern
+* **`NTS1::PARAM_ID_ARP_INTERVALS`**: Arpeggiator note intervals
+* **`NTS1::PARAM_ID_ARP_LENGTH`**: Arpeggiator sequence length
+* **`NTS1::PARAM_ID_ARP_STATE`**: Current arpeggiator state
+* **`NTS1::PARAM_ID_ARP_TEMPO`**: Arpeggiator tempo
+
 ##### Meta Parameters
 * **`NTS1::PARAM_ID_SYS_VERSION`**: Current main board system version. 
+* **`NTS1::PARAM_ID_SYS_GLOBAL`**: Global options, see corresponding sub-ID. 
 * **`NTS1::PARAM_ID_INVALID`**: Invalid parameter ID
 
 #### Sub Parameter IDs
@@ -77,7 +86,20 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 * **`NTS1::PARAM_SUBID_OSC_EDIT4`** 
 * **`NTS1::PARAM_SUBID_OSC_EDIT5`** 
 * **`NTS1::PARAM_SUBID_OSC_EDIT6`**
-* **`NTS1::INVALID_PARAM_SUB_ID`**: 
+
+##### Global Options
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_INPUT_ROUTE`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_INPUT_TRIM`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_SYNCOUT_POLARITY`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_SYNCIN_POLARITY`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_TEMPO_RANGE`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_CLOCK_SOURCE`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_SHORT_MESSAGE`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_MIDI_ROUTE`**
+* **`NTS1::PARAM_SUBID_SYS_GLOBAL_SYNC_STEP`**
+
+##### Other
+* **`NTS1::INVALID_PARAM_SUBID`**: 
 
 #### Parameter Type
 * **`NTS1::EDIT_PARAM_TYPE_PERCENT`**
@@ -90,6 +112,7 @@ This library provides a communication interface to NTS-1 digital kit's main boar
 
 * **`typedef void (*nts1_note_off_event_handler)(const nts1_rx_note_off_t *)`**
 * **`typedef void (*nts1_note_on_event_handler)(const nts1_rx_note_on_t *)`**
+* **`typedef void (*nts1_step_tick_event_handler)(void)`**
 * **`typedef void (*nts1_unit_desc_event_handler)(const nts1_rx_unit_desc_t *)`**
 * **`typedef void (*nts1_edit_param_desc_event_handler)(const nts1_rx_edit_param_desc_t *)`**
 * **`typedef void (*nts1_value_event_handler)(const nts1_rx_value_t *)`**
@@ -193,6 +216,11 @@ _Returns_ Sucess status
 * **`uint8_t NTS1::reqSysVersion(void)`**: Request main board system version  
 _Returns_ Sucess status  
 
+* **`uint8_t NTS1::reqParamValue(uint8_t id, uint8_t subid)`**: Request value for specified parameter  
+_Params_ param ID
+_Params_ param sub-ID
+_Returns_ Sucess status  
+
 * **`uint8_t NTS1::reqOscCount(void)`**: Request number of oscillators  
 _Returns_ Sucess status  
 
@@ -238,6 +266,22 @@ _Returns_ Sucess status
 _Params_ Index  
 _Returns_ Sucess status  
 
+* **`uint8_t NTS1::reqArpPatternCount(void)`**: Request number of arpeggiator patterns  
+_Returns_ Sucess status  
+
+* **`uint8_t NTS1::reqArpPatternDesc(uint8_t idx)`**: Request arpeggiator pattern descriptor  
+_Params_ Index__
+_Returns_ Sucess status  
+
+* **`uint8_t NTS1::reqArpIntervalsCount(void)`**: Request number of arpeggiator intervals  
+_Returns_ Sucess status  
+
+* **`uint8_t NTS1::reqArpIntervalsDesc(uint8_t idx)`**: Request arpeggiator intervals descriptor  
+_Params_ Index__
+_Returns_ Sucess status  
+
+
+
 #### Message Handlers
 
 * **`void NTS1::setParamChangeHandler(nts1_param_change_handler handler)`**: Set handler function for param change messages  
@@ -247,6 +291,9 @@ _Params_ Handler function
 _Params_ Handler function  
 
 * **`void NTS1::setNoteOffEventHandler(nts1_note_off_event_handler handler)`**: Set handler function for note off events  
+_Params_ Handler function  
+
+* **`void NTS1::setStepTickEventHandler(nts1_step_tick_event_handler handler)`**: Set handler function for step tick events  
 _Params_ Handler function  
 
 * **`void NTS1::setUnitDescEventHandler(nts1_unit_desc_event_handler handler)`**: Set handler function for unit descriptor replies  
