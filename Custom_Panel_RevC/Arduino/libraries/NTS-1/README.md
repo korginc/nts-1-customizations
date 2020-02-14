@@ -270,14 +270,14 @@ _Returns_ Sucess status
 _Returns_ Sucess status  
 
 * **`uint8_t NTS1::reqArpPatternDesc(uint8_t idx)`**: Request arpeggiator pattern descriptor  
-_Params_ Index__
+_Params_ Index  
 _Returns_ Sucess status  
 
 * **`uint8_t NTS1::reqArpIntervalsCount(void)`**: Request number of arpeggiator intervals  
 _Returns_ Sucess status  
 
 * **`uint8_t NTS1::reqArpIntervalsDesc(uint8_t idx)`**: Request arpeggiator intervals descriptor  
-_Params_ Index__
+_Params_ Index  
 _Returns_ Sucess status  
 
 
