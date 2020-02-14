@@ -16,7 +16,7 @@ language: ja
 * [PCB data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber)
 * [Pin mappings](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)
 
-全てのファイルを入手するには、GitHubリポジトリをクローンして下さい。
+全てのファイルを入手するには、[GitHubリポジトリ](https://github.com/korginc/nts-1-customizations)をクローンして下さい。
 
  ```
   $ git clone https://github.com/korginc/nts-1-customizations.git

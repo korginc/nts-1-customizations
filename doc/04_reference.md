@@ -14,7 +14,7 @@ permalink: /doc/reference/
 * [PCB data](https://github.com/korginc/nts-1-customizations/tree/master/Custom_Panel_RevC/Gerber)
 * [Pin mappings](https://github.com/korginc/nts-1-customizations/blob/master/Custom_Panel_RevC/schematic.pdf)
 
-Clone the GitHub repository to obtain all files.
+Clone the [GitHub repository](https://github.com/korginc/nts-1-customizations) to obtain all files.
 
  ```
   $ git clone https://github.com/korginc/nts-1-customizations.git
