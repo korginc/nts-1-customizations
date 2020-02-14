@@ -3,7 +3,7 @@
 This template Arduino Sketch contains the bare minimum required to build a project for the NTS-1 Custom Panel reference board:
 
  ```
- #include <nts1.h>
+ #include <nts-1.h>
 
  NTS1 nts1;
 
