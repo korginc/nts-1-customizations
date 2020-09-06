@@ -265,7 +265,7 @@ static inline void s_spi_enable_pins()
   /* Enable SCK, MOSI, MISO. No NSS. */
   /* Peripherals alternate function */
   gpio.Mode = GPIO_MODE_AF_PP;
-  gpio.Speed = GPIO_SPEED_FREQ_HIGH;
+  gpio.Speed = GPIO_SPEED_FREQ_LOW;
   gpio.Pull = GPIO_NOPULL;
   gpio.Alternate = SPI_GPIO_AF;
   
