@@ -390,7 +390,7 @@ static uint8_t s_tx_cmd_other_bootmode(uint8_t endmark)
 
 static uint8_t s_dummy_buffer[64];
 #define RX_EVENT_MAX_DECODE_SIZE 64
-static uint8_t s_rx_event_decode_buf[RX_EVENT_MAX_DECODE_SIZE] = {0};
+static uint8_t s_rx_event_decode_buf[RX_EVENT_MAX_DECODE_SIZE] __attribute__((aligned)) = {0};
 
 static void s_rx_msg_handler(uint8_t data)
 {
