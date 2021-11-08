@@ -10,7 +10,7 @@ Make your own custom interface using reference schematics, CAD and PCB data, and
 * _Custom_Panel_RevC/_: Content specific to NTS-1 Custom Panel reference board revision C
   * _Arduino/libraries/_: Arduino IDE libraries
   * _Gerber/_: Raw PCB Gerber data output
-  * _KiCAD/_: [KiCAD](https://kicad-pcb.org/) project
+  * _KiCAD/_: [KiCAD](https://kicad.org/) project
   * _BOM-mouser.pdf_: Bill of materials with [Mouser](https://www.mouser.com/) part numbers in PDF format
   * _BOM-mouser.xls_: Bill of materials with [Mouser](https://www.mouser.com/) part numbers in XLS format (can be uploaded directly to cart)
   * _Gerber\_reference.pdf_: PCB trace and masks visual reference in PDF format
